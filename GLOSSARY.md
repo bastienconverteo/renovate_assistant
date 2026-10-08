@@ -26,6 +26,8 @@ Meanings marked (?) are inferred and need confirming. Add terms, synonyms and co
 | One Consumer Profile | The mandated activation data model | Workbook |
 | LUSA | L'Oréal USA | Workbook (?) |
 | D2C KPI Catalog | US catalog of KPIs (sheet "D2C KPI Catalog - LU 5-8"); baseline for the Canada catalog | Workbook |
+| "Goal layer" | How the workshop summary version 2 writes "Gold layer" (transcription slip) | Workshop 1 v2 |
+| T2C KPI catalog Canada | Name used for the Canada KPI sheet in version 2; probably the D2C KPI Catalog (?) | Workshop 1 v2 |
 | Canada KPI Catalog | Dedicated catalog Deepti will create from the US baseline | Workshop 1 |
 | Match / Gap / New | Classification of each US KPI for Canada: adopt as-is, Canada-specific adjustment, missing/new | Workshop 1 |
 | Consumer funnel | Acquisition, engagement, conversion, retention, loyalty steps used to group KPIs | KPI catalog |

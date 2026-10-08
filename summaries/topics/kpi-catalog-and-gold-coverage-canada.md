@@ -1,6 +1,6 @@
 # Topic: Canada KPI catalog and Gold coverage
 
-Last updated: 2026-10-08 | Owner: Bastien | Sources: workshop 1 recap, Genie analysis, US workbook
+Last updated: 2026-10-08 (workshop summary versions 1 and 2 reconciled) | Owner: Bastien | Sources: workshop 1 recap, Genie analysis, US workbook
 
 ## State in five lines
 1. The US built the SuperGold layer and KPI catalog; Canada reuses them as baseline (decided at workshop 1) and adds Canada-specific needs.
@@ -12,6 +12,9 @@ Last updated: 2026-10-08 | Owner: Bastien | Sources: workshop 1 recap, Genie ana
 ## What happened
 - 2026-10-08: ingested the Elevate deck (context), the US workbook, Genie's cross-reference analysis and the workshop 1 recap.
 - Workshop 1 (date not stated): approach agreed; next workshop to be scheduled by Ajantha for the week of 2026-10-12 (inferred) and to start with a manageable set of priority KPIs.
+
+## People (from workshop 1, version 2)
+- Deepti: leads reporting and analytics on the IT side, all zones; defines what Gold should look like. Andres: manages implementation and data engineering on the IT side. Ajantha: Renovate project manager across US, Canada, LATAM. Governance line (Deepti): Gold is global and uniform; local adjustments only for specific business needs (e.g. brand-specific "active customer"); align with US definitions. Attributes vs KPIs first: unresolved, team will work on both.
 
 ## What is next
 - Bastien: Match / Gap / New review of US KPIs (ACT-0010); prepare a priority KPI set for the next workshop (ACT-0017, suggested); run the Databricks field coverage prompts (ACT-0004).

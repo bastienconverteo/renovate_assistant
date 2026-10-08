@@ -12,8 +12,8 @@ Last refreshed: 2026-10-08 | Sources: Elevate deck, US workbook, Genie analysis,
 
 ## Pending (no due date)
 - Sandra (SFMC, Attentive), Damien (LiveRamp), Thomas and Oli (Genie): data element lists requested by email on 2026-10-08, no reply yet.
-- Deepti: share the Canada KPI Catalog ("next step"). Deepti and Andres: communicate delivery deadlines for attributes and KPIs (by email, no date).
-- Ajantha: schedule the next workshop (next week, inferred week of 2026-10-12).
+- Deepti (IT lead, reporting and analytics, all zones): share the Canada KPI Catalog ("next step"). Deepti and Andres: communicate delivery deadlines for attributes and KPIs (by email, no date).
+- Ajantha (Renovate project manager across regions): schedule the next workshop (next week, inferred week of 2026-10-12).
 
 ## Blocked
 - Nothing registered as blocked. Lessons from the US backlog to watch for Canada: SFMC / Attentive geotracking and OS data not being sent; primary email, phone and address rules; 1900-01-01 birth dates.
@@ -26,7 +26,7 @@ Last refreshed: 2026-10-08 | Sources: Elevate deck, US workbook, Genie analysis,
 - DEC-0001 snapshots; DEC-0002 derived KPIs pre-computed or formula; DEC-0003 ID naming (brand_mdm_id vs brand_customer_id); DEC-0004 to DEC-0007 one definition each for contactable, engagement, new buyer, churn; DEC-0008 Canada-specific attributes; DEC-0009 refresh cadences; DEC-0010 migration path; DEC-0017 attributes or KPIs first. Decision owners not yet identified.
 
 ## Missing information
-- Canadian table coverage per field (Databricks Prompts A and B not run); KPI sections beyond the four reports analysed; surnames and entities of Sandra, Damien, Thomas, Oli, Deepti, Andres, Fatima, Ajantha; workshop dates.
+- Canadian table coverage per field (Databricks Prompts A and B not run); KPI sections beyond the four reports analysed; surnames of all named people; whether Mezyan and Fatima are the same person; workshop dates; Canada-specific brand definitions (for example "active customer").
 
 ## Regional coverage
 | Region | Position |

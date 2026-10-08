@@ -48,3 +48,11 @@ Small details are kept here on purpose: Bastien asked that anything possibly rel
 - People: Deepti (creates the Canada KPI catalog; aligns deadlines with Andres), Andres, Fatima (noted the US exercise started with attributes first), Ajantha (schedules workshops). Roles and entities unknown. These are Canada workshop participants and are tracked (supersedes "US names are not tracked" for them; US backlog reporters in the workbook remain untracked). [documented]
 - Next workshop: Ajantha to schedule for next week (inferred week of 2026-10-12); it starts with a manageable set of priority / obvious KPIs. [documented]
 - Registers were populated on 2026-10-08 after Bastien's "approve all" (change sets 001 and 002); the workshop recap was applied in the same pass because it came with the instruction to add it to memory. Bastien can correct any row.
+
+## Added 2026-10-08 (late): workshop 1, second summary reconciled with the first
+- Roles: Deepti leads reporting and analytics on the IT side for all zones (defines what Gold looks like: KPIs and attributes); Andres manages implementation and data engineering on the IT side for all zones; Ajantha is the Project Manager for Renovate bridging US, Canada, LATAM. Bastien is the Canada-side project manager (Ajantha is the programme-level PM). [documented, summary v2]
+- Governance: Gold is a global initiative meant to be uniform; local adjustments are possible for specific business needs (example given: brand-specific definitions such as "active customer"); otherwise align with US definitions to keep one source of truth. [documented]
+- Purpose restated: move from separate CRM Base and CRM Reporting to one unified Gold layer; downstream SFMC, Genie, CDP must be supported by Gold. [documented]
+- Unresolved conflict: version 1 says Fatima noted the US started with attributes first; version 2 says Mezyan suggested starting with attributes. Possibly one person. [to confirm with Bastien]
+- Text quirks: "goal layer" = Gold layer; the Canada sheet is called "T2C KPI catalog Canada" in v2 and "D2C KPI Catalog" in v1 (probably D2C). [inferred]
+- Both summaries agree on the core; details of the comparison in extracts/2026-10-08_workshop_kpi-workshop-1-summary-v2.md.
