@@ -30,3 +30,10 @@ Any ID written in any cell is a link (for example `links`, `requirement_ids`, `a
 
 ## Integrity
 `pm.py check` validates headers, enum values, topics, SRC references, duplicate IDs and dangling links. A commit should only happen with check ok.
+
+## How to ask (day to day)
+- Ask in the project chat, one message per question. Each question gets its own thread. The thread starts with no chat history and reads the repo (AGENTS → CONTEXT → digest → `pm.py`). Answers stay consistent because the repo is the only memory.
+- Keep follow-ups on the same subject in that subject's thread. Start a new message for an unrelated subject: a fresh thread costs about 11 KB of startup reading, while a long thread gets more expensive with every turn.
+- Inputs: drop files in `inbox/` and say "ingest". Paste emails and ServiceNow threads into the message. Personal data stays in `inbox/` only.
+- Anything decided or learned in a thread must be written to the repo (`pm.py add/set`, commit). Otherwise it is lost when the thread ends.
+- The same rules work outside Claude Projects: Claude desktop or Claude Code opened on this folder reads `AGENTS.md` first.
