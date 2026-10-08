@@ -1,0 +1,11 @@
+id,title,type,date,raw,extract,notes,updated
+SRC-0001,"DDX Elevate deck (March 2026), context only",deck,2026-03,raw/2026-10-08_deck_DDX-Elevate-latest.pdf,extracts/2026-10-08_deck_ddx-elevate.md,Budgets not relevant,2026-10-08
+SRC-0002,"US workbook Gold Layer Domain Data Requirements (SuperGold, KPI catalog, backlog)",workbook,2026-10-08,raw/2026-10-08_workbook_Gold-Layer-Domain-Data-Requirements.xlsx,extracts/2026-10-08_workbook_gold-layer-domain-data-requirements.md,US-specific baseline; 479 SuperGold rows,2026-10-08
+SRC-0003,Genie analysis: Canada reports vs SuperGold,analysis,2026-10-08,raw/2026-10-08_genie-analysis_canada-kpi-cross-reference.md,extracts/2026-10-08_genie-analysis_canada-kpi-cross-reference.md,Design-level; field existence verified by Claude,2026-10-08
+SRC-0004,"KPI workshop 1 recap, version 1",meeting_summary,unknown,raw/2026-10-08_workshop-summary_kpi-workshop-1.md,extracts/2026-10-08_workshop_kpi-workshop-1-summary.md,MTG-0001,2026-10-08
+SRC-0005,"KPI workshop 1 summary, version 2 (with roles)",meeting_summary,unknown,raw/2026-10-08_workshop-summary_kpi-workshop-1_version-2.md,extracts/2026-10-08_workshop_kpi-workshop-1-summary-v2.md,MTG-0001; attributes-first speaker conflicts with version 1 (QST-0001),2026-10-08
+SRC-0006,Damien's reply on LiveRamp data elements (relayed by Bastien),email,2026-10-08,raw/2026-10-08_message_damien-liveramp-reply.md,extracts/2026-10-08_message_damien-liveramp-reply.md,,2026-10-08
+SRC-0007,"LiveRamp weekly file sample ""LR for RENOVATE.xlsx"" (51 columns)",file,2026-10-08,raw/2026-10-08_schema_liveramp-weekly-file-columns.md,extracts/2026-10-08_schema_liveramp-weekly-file.md,"Original in inbox/ only (personal data, git-ignored)",2026-10-08
+SRC-0008,Bastien's chat messages and draft email to the data teams,chat,2026-10-08,,CONTEXT.md,Includes 20:57 UTC clarification (12-36 one flag; no follow-up),2026-10-08
+SRC-0009,Assistant suggestion (not a project source),assistant,2026-10-08,,,Evidence is always inferred,2026-10-08
+SRC-0010,Databricks Genie prompts A-C (Canada coverage),prompt,2026-10-08,,prompts/databricks-genie-canada-coverage.md,Not yet run,2026-10-08

@@ -1,0 +1,601 @@
+id,type,title,status,topic,owner,updated
+ACT-0001,actions,"Review the SFMC and Attentive data elements, document them in the workbook (All Domains - SuperGold…",waiting,data-team-asks,Sandra,2026-10-08
+ACT-0002,actions,"Review the LiveRamp data elements, document them in the workbook and send Bastien the list (2026-10…",in_progress,data-team-asks,Damien,2026-10-08
+ACT-0003,actions,"Review the Genie data elements, document them in the workbook and send Bastien the list",waiting,data-team-asks,Thomas and Oli,2026-10-08
+ACT-0004,actions,Run the Canada field coverage analysis in Databricks (Prompts A and B) and paste the answers back,open,reporting-coverage,Bastien,2026-10-08
+ACT-0005,actions,Run the KPI coverage analysis in Databricks for catalog sections and reports not yet covered (Promp…,open,reporting-coverage,Bastien,2026-10-08
+ACT-0006,actions,"Consolidate the three data-team lists, the Genie results and the workshop outcome into the workbook…",open,gold-datapoints,Bastien,2026-10-08
+ACT-0007,actions,"Send the follow-up questions B1-B4 to Sandra, B5-B7 to Damien, B8-B10 to Thomas and Oli (assistant …",proposed,data-team-asks,Bastien,2026-10-08
+ACT-0008,actions,Prepare for the KPI catalog workshop (workshop 1 held; summary ingested 2026-10-08),done,kpi-catalog,Bastien,2026-10-08
+ACT-0009,actions,"Create and share the dedicated Canada KPI Catalog based on the US baseline, to identify gaps and lo…",open,kpi-catalog,Deepti,2026-10-08
+ACT-0010,actions,Identify discrepancies between Canada's reporting needs and the US KPI catalog (Match / Gap / New),open,kpi-catalog,Bastien / Canada DDX team,2026-10-08
+ACT-0011,actions,"Gather requirements and feedback from SFMC, Genie and other Canada stakeholders",open,kpi-catalog,Canada team,2026-10-08
+ACT-0012,actions,Review Gold-layer attributes required for Canada,open,gold-datapoints,Canada + Reporting team,2026-10-08
+ACT-0013,actions,Confirm whether attributes or KPIs need to be finalised first for engineering,open,gold-datapoints,Deepti / Andres,2026-10-08
+ACT-0014,actions,"Determine the specific timeline for attribute and KPI delivery, then share the final timeline by em…",waiting,delivery-timeline,Deepti (with Andres),2026-10-08
+ACT-0015,actions,Conduct a focused workshop on identified KPI discrepancies and priority KPIs,open,kpi-catalog,All,2026-10-08
+ACT-0016,actions,Schedule the follow-up meeting for next week to review specific KPI discrepancies,open,kpi-catalog,Ajantha,2026-10-08
+ACT-0017,actions,Prepare a manageable set of priority / obvious KPIs with Match / Gap / New status for the next work…,proposed,kpi-catalog,Bastien,2026-10-08
+ACT-0018,actions,"Ask Damien whether the Genie-suggested attributes (churn 12-24 and 24+ flags, engaged_prospects_l12…",on_hold,data-team-asks,Bastien,2026-10-08
+ACT-0019,actions,Provide the LiveRamp data schema (current weekly file) from Damien so it can be ingested; only his …,done,data-team-asks,Bastien,2026-10-08
+ACT-0020,actions,"Continue the gap analysis between the files (LiveRamp file, SuperGold, Canada KPI list) and report …",in_progress,data-team-asks,Bastien,2026-10-08
+ASM-0001,assumptions,Canada can reuse most of the US SuperGold design and needs to add new endpoints (workshop 1: the US…,open,governance-scope,Bastien,2026-10-08
+ASM-0002,assumptions,The list of KPIs used in Canada reporting is available in Databricks (Genie already cross-reference…,partly_confirmed,reporting-coverage,Bastien,2026-10-08
+COM-0001,commitments,"Create and share the dedicated Canada KPI Catalog based on the US baseline, to identify gaps and lo…",open,kpi-catalog,Deepti,2026-10-08
+COM-0002,commitments,"Determine and email the delivery timeline for attributes and KPIs, possibly separate deadlines. No …",open,delivery-timeline,Deepti (aligning with Andres),2026-10-08
+COM-0003,commitments,Schedule the follow-up workshop for next week to review specific KPI discrepancies,open,kpi-catalog,Ajantha,2026-10-08
+DP-0001,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0002,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0003,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0004,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0005,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0006,datapoints,first_name | First Name,existing_us,,,2026-10-08
+DP-0007,datapoints,last_name | Last Name,existing_us,,,2026-10-08
+DP-0008,datapoints,birth_month_day | Birthday (Month + Day),existing_us,,,2026-10-08
+DP-0009,datapoints,gender | Gender,existing_us,,,2026-10-08
+DP-0010,datapoints,ltfcg | In Global Control Group,existing_us,,,2026-10-08
+DP-0011,datapoints,preferred_language | (no business term in workbook),existing_us,,,2026-10-08
+DP-0012,datapoints,preferred_store | (no business term in workbook),existing_us,,,2026-10-08
+DP-0013,datapoints,recommended_store | (no business term in workbook),existing_us,,,2026-10-08
+DP-0014,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0015,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0016,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0017,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0018,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0019,datapoints,contactability_key | Contactability key,existing_us,,,2026-10-08
+DP-0020,datapoints,address_perm_status | Mail Opt-In (any addres),existing_us,,,2026-10-08
+DP-0021,datapoints,email_perm_status | Email Opt-In (any email),existing_us,,,2026-10-08
+DP-0022,datapoints,phone_perm_status | Phone Opt-In (any #),existing_us,,,2026-10-08
+DP-0023,datapoints,sms_double_optin | SMS Opt-In (any #),existing_us,,,2026-10-08
+DP-0024,datapoints,targeted_advertisement_flag | Targeted Ad Opt-In,existing_us,,,2026-10-08
+DP-0025,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0026,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0027,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0028,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0029,datapoints,loyalty_member_num | Loyalty Member Brand ID,existing_us,,,2026-10-08
+DP-0030,datapoints,email_address | Loyalty Email Address,existing_us,,,2026-10-08
+DP-0031,datapoints,is_loyalty | Loyalty Program Member?,existing_us,,,2026-10-08
+DP-0032,datapoints,loyalty_channel | Loyalty Preferred Channel,existing_us,,,2026-10-08
+DP-0033,datapoints,tier_name | Loylaty Tier Name,existing_us,,,2026-10-08
+DP-0034,datapoints,last_login_dt | Last Loyalty Login Date,existing_us,,,2026-10-08
+DP-0035,datapoints,loyalty_tier_join_dt | Current Loyalty Tier Acheivement Date,existing_us,,,2026-10-08
+DP-0036,datapoints,loyalty_tier_expiry_dt | Current Loyalty Tier Expiry Date,existing_us,,,2026-10-08
+DP-0037,datapoints,loyalty_balance | Current Loyalty Point Balance,existing_us,,,2026-10-08
+DP-0038,datapoints,loyalty_lifetime_balance | Lifetime Loyalty Point Balance,existing_us,,,2026-10-08
+DP-0039,datapoints,redeemed_points_last_1m | Loyalty Points Redeemed - Past 1M,existing_us,,,2026-10-08
+DP-0040,datapoints,earned_points_last_12m | Loyalty Points Earned - Past 12M,existing_us,,,2026-10-08
+DP-0041,datapoints,redeemed_points_last_12m | Loyalty Points Redeemed - Past 12M,existing_us,,,2026-10-08
+DP-0042,datapoints,expired_points_last_1m | Loyalty Points Expired - Past 1M,existing_us,,,2026-10-08
+DP-0043,datapoints,loyalty_points_expiring | Loyalty Points Expiring - This Month,existing_us,,,2026-10-08
+DP-0044,datapoints,loyalty_expiration_dt | Loyalty Points Expiry Date - This Month,existing_us,,,2026-10-08
+DP-0045,datapoints,loyalty_last_activity_dt | Last Loyalty Activity Date,existing_us,,,2026-10-08
+DP-0046,datapoints,loyalty_member_start_dt | Loyalty Membership Start Date,existing_us,,,2026-10-08
+DP-0047,datapoints,loyalty_status_key | Loyalty Activity Status,existing_us,,,2026-10-08
+DP-0048,datapoints,actions_needed_for_keep_tier | Loyalty Spend Needed to Keep Tier,existing_us,,,2026-10-08
+DP-0049,datapoints,actions_needed_for_next_tier | Loyalty Spend Needed to Increase Tier,existing_us,,,2026-10-08
+DP-0050,datapoints,next_tier_name | Next Loyalty Tier Name,existing_us,,,2026-10-08
+DP-0051,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0052,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0053,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0054,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0055,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0056,datapoints,face_product_finish_preference | Usual face makeup,existing_us,,,2026-10-08
+DP-0057,datapoints,makeup_lip_product | Usual lip makeup,existing_us,,,2026-10-08
+DP-0058,datapoints,makeup_nail_product | Usual nail makeup,existing_us,,,2026-10-08
+DP-0059,datapoints,colorful_hair | Colorful hair,existing_us,,,2026-10-08
+DP-0060,datapoints,hair_state | Hair state,existing_us,,,2026-10-08
+DP-0061,datapoints,hair_texture | Hair texture,existing_us,,,2026-10-08
+DP-0062,datapoints,scalp_type | Scalp type,existing_us,,,2026-10-08
+DP-0063,datapoints,zones | Zones,existing_us,,,2026-10-08
+DP-0064,datapoints,concern_improvement_goal | Concern,existing_us,,,2026-10-08
+DP-0065,datapoints,product_category | product category,existing_us,,,2026-10-08
+DP-0066,datapoints,product_finish | product finish,existing_us,,,2026-10-08
+DP-0067,datapoints,lash_look_priority | lash look priority,existing_us,,,2026-10-08
+DP-0068,datapoints,makeup_expectation | makeup expectation,existing_us,,,2026-10-08
+DP-0069,datapoints,makeup_look | makeup look,existing_us,,,2026-10-08
+DP-0070,datapoints,makeup_skill_level | makeup skill level,existing_us,,,2026-10-08
+DP-0071,datapoints,nail_aesthetic | nail aesthetic,existing_us,,,2026-10-08
+DP-0072,datapoints,nail_color | nail color,existing_us,,,2026-10-08
+DP-0073,datapoints,nail_skill_level | nail skill level,existing_us,,,2026-10-08
+DP-0074,datapoints,product_coverage | product coverage,existing_us,,,2026-10-08
+DP-0075,datapoints,fragrance_family | fragrance family,existing_us,,,2026-10-08
+DP-0076,datapoints,hair_color_cover | hair color cover,existing_us,,,2026-10-08
+DP-0077,datapoints,hair_color_service | hair color service,existing_us,,,2026-10-08
+DP-0078,datapoints,hair_style_service | hair style service,existing_us,,,2026-10-08
+DP-0079,datapoints,hair_wash_frequency | Hair wash frequency,existing_us,,,2026-10-08
+DP-0080,datapoints,curls_texture | curls texture,existing_us,,,2026-10-08
+DP-0081,datapoints,hair_care_product | hair care product,existing_us,,,2026-10-08
+DP-0082,datapoints,beauty_specialty_multi_brand | specialty multi-brand beauty store preference,existing_us,,,2026-10-08
+DP-0083,datapoints,drugstore | drugstore preference,existing_us,,,2026-10-08
+DP-0084,datapoints,grocery_supermarket | grocery store/supermarket preference,existing_us,,,2026-10-08
+DP-0085,datapoints,pure_players | pure player preference,existing_us,,,2026-10-08
+DP-0086,datapoints,product_type | product type,existing_us,,,2026-10-08
+DP-0087,datapoints,fragrance_note | fragrance note,existing_us,,,2026-10-08
+DP-0088,datapoints,hair_treatment | hair treatment,existing_us,,,2026-10-08
+DP-0089,datapoints,pro_treatment_regimen | pro treatment regimen,existing_us,,,2026-10-08
+DP-0090,datapoints,hair_color_finish | hair color finish,existing_us,,,2026-10-08
+DP-0091,datapoints,fragrance_priority | Fragrance Priority,existing_us,,,2026-10-08
+DP-0092,datapoints,fragrance_routine | Fragrance Routine,existing_us,,,2026-10-08
+DP-0093,datapoints,heating_tool | Heating tool,existing_us,,,2026-10-08
+DP-0094,datapoints,HasBeautyProfileData | HasBeautyProfileData,existing_us,,,2026-10-08
+DP-0095,datapoints,pro_treatments | pro teatments,existing_us,,,2026-10-08
+DP-0096,datapoints,nail_product_finish_preference | Usual nail makeup,existing_us,,,2026-10-08
+DP-0097,datapoints,product_recommendation | Product Recommendation,existing_us,,,2026-10-08
+DP-0098,datapoints,skin_undertone | skin undertone,existing_us,,,2026-10-08
+DP-0099,datapoints,skin_tone | Skin tone,existing_us,,,2026-10-08
+DP-0100,datapoints,eye_color | Eye Color,existing_us,,,2026-10-08
+DP-0101,datapoints,hair_color | Hair Color,existing_us,,,2026-10-08
+DP-0102,datapoints,skin_type | Skin type,existing_us,,,2026-10-08
+DP-0103,datapoints,hair_type | Hair type,existing_us,,,2026-10-08
+DP-0104,datapoints,mass_merchandise | (no business term in workbook),existing_us,,,2026-10-08
+DP-0105,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0106,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0107,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0108,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0109,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0110,datapoints,campaign_nm | Acquisition Campaign Name,existing_us,,,2026-10-08
+DP-0111,datapoints,source_name | Acquisition Data Source System,existing_us,,,2026-10-08
+DP-0112,datapoints,acquisition_channel_key | Acquisition Channel Key,existing_us,,,2026-10-08
+DP-0113,datapoints,registration_status_key | Registration Status Key,existing_us,,,2026-10-08
+DP-0114,datapoints,registration_source | Registration Source,existing_us,,,2026-10-08
+DP-0115,datapoints,registration_sub_source | Registration Sub-Source,existing_us,,,2026-10-08
+DP-0116,datapoints,acquisition_date_key | Acquisition Date Key,existing_us,,,2026-10-08
+DP-0117,datapoints,last_engagement_date_key | Last Engagement Date Key,existing_us,,,2026-10-08
+DP-0118,datapoints,consumer_email_open_click_status_key | Opened & Clicked Email Status Key,existing_us,,,2026-10-08
+DP-0119,datapoints,last_engagement_channel_key | Last Engagement Channel Key,existing_us,,,2026-10-08
+DP-0120,datapoints,consumer_activity_key | Consumer Activity Key,existing_us,,,2026-10-08
+DP-0121,datapoints,consumer_activity_status_key | Consumer Activity Status Key,existing_us,,,2026-10-08
+DP-0122,datapoints,last_modified_dt | Last Profile Modification Date,existing_us,,,2026-10-08
+DP-0123,datapoints,latest_review | Last Product Review Rating,existing_us,,,2026-10-08
+DP-0124,datapoints,source_of_traffic | (no business term in workbook),existing_us,,,2026-10-08
+DP-0125,datapoints,point_of_collection | (no business term in workbook),existing_us,,,2026-10-08
+DP-0126,datapoints,first_purchase_date_key | First Purchase Date,existing_us,,,2026-10-08
+DP-0127,datapoints,last_purchase_date_key | Last Purchase Date,existing_us,,,2026-10-08
+DP-0128,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0129,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0130,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0131,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0132,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0133,datapoints,life_time_total_sales | Net Sales - Lifetime,existing_us,,,2026-10-08
+DP-0134,datapoints,life_time_unique_orders | Total Unique Orders - Lifetime,existing_us,,,2026-10-08
+DP-0135,datapoints,last_12mnths_net_sales | Net Sales - L12M,existing_us,,,2026-10-08
+DP-0136,datapoints,last_12mnth_unique_orders | Total Unigue Orders - L12M,existing_us,,,2026-10-08
+DP-0137,datapoints,buyer_status_key | Active Buyer Status Key,existing_us,,,2026-10-08
+DP-0138,datapoints,lifetime_consumer_status_key | Has Ever Purchased?,existing_us,,,2026-10-08
+DP-0139,datapoints,lapsed_buyer_status_key | Lapsed Buyer Status Key,existing_us,,,2026-10-08
+DP-0140,datapoints,retained_buyer_status_key | Retained Buyer Status Key,existing_us,,,2026-10-08
+DP-0141,datapoints,repeat_buyer_status_key | Repeat Buyer Status Key,existing_us,,,2026-10-08
+DP-0142,datapoints,reactivated_buyer_status_key | Reactivated Buyer Status Key,existing_us,,,2026-10-08
+DP-0143,datapoints,new_buyer_status_key | New Buyer Status Key,existing_us,,,2026-10-08
+DP-0144,datapoints,decile_key | Decile Key,existing_us,,,2026-10-08
+DP-0145,datapoints,highest_decile_key | Highest Decile Key,existing_us,,,2026-10-08
+DP-0146,datapoints,highest_decile_date_key | Highest Decile Date Key,existing_us,,,2026-10-08
+DP-0147,datapoints,order_frequency | Order Frequency,existing_us,,,2026-10-08
+DP-0148,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0149,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0150,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0151,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0152,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0153,datapoints,customer_buyer_type | Customer Type,existing_us,,,2026-10-08
+DP-0154,datapoints,generation_flag | Generation of Customer,existing_us,,,2026-10-08
+DP-0155,datapoints,recency_of_purchase | Days Since Last Purchase,existing_us,,,2026-10-08
+DP-0156,datapoints,active_engaged_last_12_months | Active Last 12 Months,existing_us,,,2026-10-08
+DP-0157,datapoints,active_engaged_without_signups_last_12_months | Active (Excl. Signups) Last 12 Months,existing_us,,,2026-10-08
+DP-0158,datapoints,order_frequency | Order Frequency,existing_us,,,2026-10-08
+DP-0159,datapoints,order_frequency_last_year | Order Frequency Last Year,existing_us,,,2026-10-08
+DP-0160,datapoints,AOV_last_3_months_bucket | Avg Order Value Last 3 Months,existing_us,,,2026-10-08
+DP-0161,datapoints,AOV_months_3_to_6_bucket | Avg Order Value 3-6 Months,existing_us,,,2026-10-08
+DP-0162,datapoints,AOV_months_6_to_9_bucket | Avg Order Value 6-9 Months,existing_us,,,2026-10-08
+DP-0163,datapoints,AOV_months_9_to_12_bucket | Avg Order Value 9-12 Months,existing_us,,,2026-10-08
+DP-0164,datapoints,AOV_last_12_months_bucket | Avg Order Value Last 12 Months,existing_us,,,2026-10-08
+DP-0165,datapoints,AOV_previous_year_bucket | Avg Order Value Prior Year,existing_us,,,2026-10-08
+DP-0166,datapoints,LDB_12m_spend_bucket | LDB Spend Last 12 Months,existing_us,,,2026-10-08
+DP-0167,datapoints,CPD_12m_spend_bucket | CPD Spend Last 12 Months,existing_us,,,2026-10-08
+DP-0168,datapoints,PPD_12m_spend_bucket | PPD Spend Last 12 Months,existing_us,,,2026-10-08
+DP-0169,datapoints,LUXE_12m_spend_bucket | LUXE Spend Last 12 Months,existing_us,,,2026-10-08
+DP-0170,datapoints,LUSA_12m_spend_bucket | Total Spend Last 12 Months,existing_us,,,2026-10-08
+DP-0171,datapoints,msg_channel_email | Has Email Channel,existing_us,,,2026-10-08
+DP-0172,datapoints,msg_channel_sms | Has SMS Channel,existing_us,,,2026-10-08
+DP-0173,datapoints,email_active_and_engaged_last_6_months | Email Engaged Last 6 Months,existing_us,,,2026-10-08
+DP-0174,datapoints,email_active_and_engaged_last_12_months | Email Engaged Last 12 Months,existing_us,,,2026-10-08
+DP-0175,datapoints,sms_active_and_engaged_last_6_months | SMS Engaged Last 6 Months,existing_us,,,2026-10-08
+DP-0176,datapoints,sms_active_and_engaged_last_12_months | SMS Engaged Last 12 Months,existing_us,,,2026-10-08
+DP-0177,datapoints,filter_delivered_0_3m | Delivered Filter Last 0-3 Months,existing_us,,,2026-10-08
+DP-0178,datapoints,filter_delivered_3_6m | Delivered Filter Last 3-6 Months,existing_us,,,2026-10-08
+DP-0179,datapoints,filter_delivered_6_9m | Delivered Filter Last 6-9 Months,existing_us,,,2026-10-08
+DP-0180,datapoints,filter_delivered_9_12m | Delivered Filter Last 9-12 Months,existing_us,,,2026-10-08
+DP-0181,datapoints,filter_delivered_12_24m | Delivered Filter Last 12-24 Months,existing_us,,,2026-10-08
+DP-0182,datapoints,filter_delivered_0_12m | Delivered Filter Last 12 Months,existing_us,,,2026-10-08
+DP-0183,datapoints,filter_clicked_0_3m | Clicked Filter Last 0-3 Months,existing_us,,,2026-10-08
+DP-0184,datapoints,filter_clicked_3_6m | Clicked Filter Last 3-6 Months,existing_us,,,2026-10-08
+DP-0185,datapoints,filter_clicked_6_9m | Clicked Filter Last 6-9 Months,existing_us,,,2026-10-08
+DP-0186,datapoints,filter_clicked_9_12m | Clicked Filter Last 9-12 Months,existing_us,,,2026-10-08
+DP-0187,datapoints,filter_clicked_12_24m | Clicked Filter Last 12-24 Months,existing_us,,,2026-10-08
+DP-0188,datapoints,filter_clicked_0_12m | Clicked Filter Last 12 Months,existing_us,,,2026-10-08
+DP-0189,datapoints,overall_CTR_0_3m_bucket | Click-Through Rate Last 0-3 Months,existing_us,,,2026-10-08
+DP-0190,datapoints,overall_CTR_3_6m_bucket | Click-Through Rate Last 3-6 Months,existing_us,,,2026-10-08
+DP-0191,datapoints,overall_CTR_6_9m_bucket | Click-Through Rate Last 6-9 Months,existing_us,,,2026-10-08
+DP-0192,datapoints,overall_CTR_9_12m_bucket | Click-Through Rate Last 9-12 Months,existing_us,,,2026-10-08
+DP-0193,datapoints,overall_CTR_12_24m_bucket | Click-Through Rate Last 12-24 Months,existing_us,,,2026-10-08
+DP-0194,datapoints,overall_CTR_0_12m_bucket | Click-Through Rate Last 12 Months,existing_us,,,2026-10-08
+DP-0195,datapoints,engagement_time_period_0_3m | Engaged Last 0-3 Months,existing_us,,,2026-10-08
+DP-0196,datapoints,engagement_time_period_3_6m | Engaged Last 3-6 Months,existing_us,,,2026-10-08
+DP-0197,datapoints,engagement_time_period_6_9m | Engaged Last 6-9 Months,existing_us,,,2026-10-08
+DP-0198,datapoints,engagement_time_period_9_12m | Engaged Last 9-12 Months,existing_us,,,2026-10-08
+DP-0199,datapoints,engagement_time_period_12_24m | Engaged Last 12-24 Months,existing_us,,,2026-10-08
+DP-0200,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0201,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0202,datapoints,ekey | TransUnion Customer ID,existing_us,,,2026-10-08
+DP-0203,datapoints,birth_date | date of birth,existing_us,,,2026-10-08
+DP-0204,datapoints,age_code | age,existing_us,,,2026-10-08
+DP-0205,datapoints,age_range | age range,existing_us,,,2026-10-08
+DP-0206,datapoints,input_address_latitude | address latitude,existing_us,,,2026-10-08
+DP-0207,datapoints,input_address_longitude | address longitude,existing_us,,,2026-10-08
+DP-0208,datapoints,append_address_latitude | appended address latitude,existing_us,,,2026-10-08
+DP-0209,datapoints,append_address_longitude | appended address longitude,existing_us,,,2026-10-08
+DP-0210,datapoints,append_city | appended city,existing_us,,,2026-10-08
+DP-0211,datapoints,append_postal_code | appended postal code,existing_us,,,2026-10-08
+DP-0212,datapoints,append_state | appended state,existing_us,,,2026-10-08
+DP-0213,datapoints,business_owner | business owner,existing_us,,,2026-10-08
+DP-0214,datapoints,children_presence_of_child_0_17 | children present in household living unit,existing_us,,,2026-10-08
+DP-0215,datapoints,presence_of_credit_card | credit card owner,existing_us,,,2026-10-08
+DP-0216,datapoints,dwelling_type | dwelling type,existing_us,,,2026-10-08
+DP-0217,datapoints,household_composition | household composition,existing_us,,,2026-10-08
+DP-0218,datapoints,hh_interest_cooking | interest in cooking,existing_us,,,2026-10-08
+DP-0219,datapoints,hh_interest_luxury_life | interest in luxury,existing_us,,,2026-10-08
+DP-0220,datapoints,hh_interest_online_education | interest in online education,existing_us,,,2026-10-08
+DP-0221,datapoints,mail_responder | mail responder,existing_us,,,2026-10-08
+DP-0222,datapoints,hh_internet_buyer | makes online purchases,existing_us,,,2026-10-08
+DP-0223,datapoints,median_family_household_income | median family houshold income,existing_us,,,2026-10-08
+DP-0224,datapoints,number_of_adults_in_living_unit | number of adults in household living unit,existing_us,,,2026-10-08
+DP-0225,datapoints,number_of_children_in_living_unit | number of children in household living unit,existing_us,,,2026-10-08
+DP-0226,datapoints,number_of_persons_in_living_unit | number of people in household living unit,existing_us,,,2026-10-08
+DP-0227,datapoints,occupation_code | occupation code,existing_us,,,2026-10-08
+DP-0228,datapoints,occupation_group | occupation group,existing_us,,,2026-10-08
+DP-0229,datapoints,hh_purchase_membership_warehouse | owns a warehouse membership,existing_us,,,2026-10-08
+DP-0230,datapoints,cc_premium_store_or_retail | owns premium stor or retail credit card,existing_us,,,2026-10-08
+DP-0231,datapoints,education_model | predicted education level,existing_us,,,2026-10-08
+DP-0232,datapoints,gender_code | predicted gender,existing_us,,,2026-10-08
+DP-0233,datapoints,estimated_household_income_broad | predicted household income (broad),existing_us,,,2026-10-08
+DP-0234,datapoints,estimated_household_income_narrow | predicted household income (narrow),existing_us,,,2026-10-08
+DP-0235,datapoints,maritalstatus | predicted marital status,existing_us,,,2026-10-08
+DP-0236,datapoints,retail_card_likely | predicted retail credit card owner,existing_us,,,2026-10-08
+DP-0237,datapoints,presence_of_premium_credit_card | premium credit card owner,existing_us,,,2026-10-08
+DP-0238,datapoints,hh_purchase_cosmetics | purchased cosmetics through mail,existing_us,,,2026-10-08
+DP-0239,datapoints,cc_retail_card | retail credit card owner,existing_us,,,2026-10-08
+DP-0240,datapoints,first_name_append | appended first name,existing_us,,,2026-10-08
+DP-0241,datapoints,last_name_append | appended last name,existing_us,,,2026-10-08
+DP-0242,datapoints,append_phone | appended phone,existing_us,,,2026-10-08
+DP-0243,datapoints,append_email_id | appended email,existing_us,,,2026-10-08
+DP-0244,datapoints,append_address_line_1 | apppended address line 1,existing_us,,,2026-10-08
+DP-0245,datapoints,append_address_line_2 | apppended address line 2,existing_us,,,2026-10-08
+DP-0246,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0247,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0248,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0249,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0250,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0251,datapoints,model_name | Model Name,existing_us,,,2026-10-08
+DP-0252,datapoints,segment_value | Segment Value,existing_us,,,2026-10-08
+DP-0253,datapoints,model_refresh_date | Model Refresh Date,existing_us,,,2026-10-08
+DP-0254,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0255,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0256,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0257,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0258,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0259,datapoints,contact_type | Phone / Email / Mailing Address,existing_us,,,2026-10-08
+DP-0260,datapoints,contact_value | Phone / Email / Mailing Address,existing_us,,,2026-10-08
+DP-0261,datapoints,contact_sub_type | Phone / Email / Mailing Address,existing_us,,,2026-10-08
+DP-0262,datapoints,address_perm_status | Mail Opt-In,existing_us,,,2026-10-08
+DP-0263,datapoints,email_perm_status | Email Opt-In,existing_us,,,2026-10-08
+DP-0264,datapoints,phone_perm_status | Phone Opt-In,existing_us,,,2026-10-08
+DP-0265,datapoints,sms_double_optin | SMS Opt-In,existing_us,,,2026-10-08
+DP-0266,datapoints,email_perm_status_modified_dt | Email Opt-In Last Modified Date,existing_us,,,2026-10-08
+DP-0267,datapoints,phone_perm_status_modified_dt | Phone Opt-In Last Modified Date,existing_us,,,2026-10-08
+DP-0268,datapoints,sms_double_optin_modified_dt | SMS Opt-In Last Modified Date,existing_us,,,2026-10-08
+DP-0269,datapoints,address_perm_status_modified_dt | Address Opt-In Last Modified Date,existing_us,,,2026-10-08
+DP-0270,datapoints,address_last_updated_dt | Address Last Modified Date,existing_us,,,2026-10-08
+DP-0271,datapoints,address_line1 | address line 1,existing_us,,,2026-10-08
+DP-0272,datapoints,address_line2 | address line 2,existing_us,,,2026-10-08
+DP-0273,datapoints,address_city | City,existing_us,,,2026-10-08
+DP-0274,datapoints,address_state | State,existing_us,,,2026-10-08
+DP-0275,datapoints,zip4 | zip code (4),existing_us,,,2026-10-08
+DP-0276,datapoints,zip5 | zip code (5),existing_us,,,2026-10-08
+DP-0277,datapoints,postal_code | postal code,existing_us,,,2026-10-08
+DP-0278,datapoints,address_country | (no business term in workbook),existing_us,,,2026-10-08
+DP-0279,datapoints,ValidEmail (Global only requirement - should not be used) | Valid contact email presence,existing_us,,,2026-10-08
+DP-0280,datapoints,ValidPhone (Global only requirement - should not be used) | Valid contact phone presence,existing_us,,,2026-10-08
+DP-0281,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0282,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0283,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0284,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0285,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0286,datapoints,order_num | order id,existing_us,,,2026-10-08
+DP-0287,datapoints,source_name | Data Source,existing_us,,,2026-10-08
+DP-0288,datapoints,doc_num | Document Number,existing_us,,,2026-10-08
+DP-0289,datapoints,date_key | Purchase date,existing_us,,,2026-10-08
+DP-0290,datapoints,order_channel | Purchase Channel,existing_us,,,2026-10-08
+DP-0291,datapoints,order_type | Order Type,existing_us,,,2026-10-08
+DP-0292,datapoints,order_status | Order Status,existing_us,,,2026-10-08
+DP-0293,datapoints,net_order_qty | Order Item Net Quantity,existing_us,,,2026-10-08
+DP-0294,datapoints,net_sales | Order Net Sales,existing_us,,,2026-10-08
+DP-0295,datapoints,currency_code | Currency code,existing_us,,,2026-10-08
+DP-0296,datapoints,is_first_order | First Purchase Flag,existing_us,,,2026-10-08
+DP-0297,datapoints,offline_order_id | Offline order ID,existing_us,,,2026-10-08
+DP-0298,datapoints,online_order_id | Online order ID,existing_us,,,2026-10-08
+DP-0299,datapoints,order_total_after_discount | Order total after discount,existing_us,,,2026-10-08
+DP-0300,datapoints,order_total_before_discount | Order total before discount,existing_us,,,2026-10-08
+DP-0301,datapoints,promotion_value | Promotion Value,existing_us,,,2026-10-08
+DP-0302,datapoints,shipping_discount | Shipping Discount,existing_us,,,2026-10-08
+DP-0303,datapoints,store_num | Store Number ID,existing_us,,,2026-10-08
+DP-0304,datapoints,store_city | store city,existing_us,,,2026-10-08
+DP-0305,datapoints,store_state | store state,existing_us,,,2026-10-08
+DP-0306,datapoints,sales_associate_id | Purchase store associate ID,existing_us,,,2026-10-08
+DP-0307,datapoints,header_coupon_id | Coupon ID,existing_us,,,2026-10-08
+DP-0308,datapoints,promo_placement | Promo Placement,existing_us,,,2026-10-08
+DP-0309,datapoints,promo_code | Promo Code,existing_us,,,2026-10-08
+DP-0310,datapoints,is_gift_order | Gift Order Check,existing_us,,,2026-10-08
+DP-0311,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0312,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0313,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0314,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0315,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0316,datapoints,order_num | order id,existing_us,,,2026-10-08
+DP-0317,datapoints,line_num | line item number,existing_us,,,2026-10-08
+DP-0318,datapoints,source_name | Order Data Source System,existing_us,,,2026-10-08
+DP-0319,datapoints,doc_num | Document Number,existing_us,,,2026-10-08
+DP-0320,datapoints,date_key | Fcurrency,existing_us,,,2026-10-08
+DP-0321,datapoints,order_type | Order Type,existing_us,,,2026-10-08
+DP-0322,datapoints,line_type | line item type,existing_us,,,2026-10-08
+DP-0323,datapoints,line_status | Line Status,existing_us,,,2026-10-08
+DP-0324,datapoints,net_order_qty | Line Item Net Quantity,existing_us,,,2026-10-08
+DP-0325,datapoints,unit_price | Unit Price,existing_us,,,2026-10-08
+DP-0326,datapoints,net_sales | Line Item Net Sales,existing_us,,,2026-10-08
+DP-0327,datapoints,product_code | Product Code,existing_us,,,2026-10-08
+DP-0328,datapoints,product_name | product name,existing_us,,,2026-10-08
+DP-0329,datapoints,product_ean | Received Gift with Purchase / EAN Code,existing_us,,,2026-10-08
+DP-0330,datapoints,is_sample | Is Sample,existing_us,,,2026-10-08
+DP-0331,datapoints,line_total_before_discount | line item total before discount,existing_us,,,2026-10-08
+DP-0332,datapoints,line_total_after_discount | line item total after discount,existing_us,,,2026-10-08
+DP-0333,datapoints,promotion_value | Promotion Value,existing_us,,,2026-10-08
+DP-0334,datapoints,offline_order_id | Offline order ID,existing_us,,,2026-10-08
+DP-0335,datapoints,online_order_id | Online order ID,existing_us,,,2026-10-08
+DP-0336,datapoints,unit_price | Unit Price,existing_us,,,2026-10-08
+DP-0337,datapoints,is_gift_item | (no business term in workbook),existing_us,,,2026-10-08
+DP-0338,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0339,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0340,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0341,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0342,datapoints,source_customer_id | (no business term in workbook),existing_us,,,2026-10-08
+DP-0343,datapoints,source_name | (no business term in workbook),existing_us,,,2026-10-08
+DP-0344,datapoints,order_num | (no business term in workbook),existing_us,,,2026-10-08
+DP-0345,datapoints,line_num | (no business term in workbook),existing_us,,,2026-10-08
+DP-0346,datapoints,doc_num | (no business term in workbook),existing_us,,,2026-10-08
+DP-0347,datapoints,date_key | (no business term in workbook),existing_us,,,2026-10-08
+DP-0348,datapoints,promo_id | (no business term in workbook),existing_us,,,2026-10-08
+DP-0349,datapoints,coupon_id | (no business term in workbook),existing_us,,,2026-10-08
+DP-0350,datapoints,campaign_id | (no business term in workbook),existing_us,,,2026-10-08
+DP-0351,datapoints,base_price | (no business term in workbook),existing_us,,,2026-10-08
+DP-0352,datapoints,lineitem_text | (no business term in workbook),existing_us,,,2026-10-08
+DP-0353,datapoints,tax_basis_amt | (no business term in workbook),existing_us,,,2026-10-08
+DP-0354,datapoints,net_price | (no business term in workbook),existing_us,,,2026-10-08
+DP-0355,datapoints,tax_amt | (no business term in workbook),existing_us,,,2026-10-08
+DP-0356,datapoints,gross_price | (no business term in workbook),existing_us,,,2026-10-08
+DP-0357,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0358,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0359,datapoints,source_name | Campaign Data Source,existing_us,,,2026-10-08
+DP-0360,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0361,datapoints,campaign_unique_id | Campaign ID,existing_us,,,2026-10-08
+DP-0362,datapoints,date_key | campaign date key,existing_us,,,2026-10-08
+DP-0363,datapoints,delivery_id | Delivery Campaign ID,existing_us,,,2026-10-08
+DP-0364,datapoints,segment_name | Campaign target segment name,existing_us,,,2026-10-08
+DP-0365,datapoints,delivery_date | campaign message delivery date,existing_us,,,2026-10-08
+DP-0366,datapoints,msg_channel | Campaign Channel,existing_us,,,2026-10-08
+DP-0367,datapoints,subject_line | Campaign Subject header,existing_us,,,2026-10-08
+DP-0368,datapoints,campaign_type | Campaign type,existing_us,,,2026-10-08
+DP-0369,datapoints,campaign_name | campaign name,existing_us,,,2026-10-08
+DP-0370,datapoints,start_dt | Campaign start date,existing_us,,,2026-10-08
+DP-0371,datapoints,end_dt | Campaign end date,existing_us,,,2026-10-08
+DP-0372,datapoints,total_opt_out | Campaign : Total opt-out,existing_us,,,2026-10-08
+DP-0373,datapoints,total_sent | Campaign : Total sent,existing_us,,,2026-10-08
+DP-0374,datapoints,total_open | Campaign : Total opened,existing_us,,,2026-10-08
+DP-0375,datapoints,total_unique_opened | total unique campaign opens,existing_us,,,2026-10-08
+DP-0376,datapoints,total_bounced | total campaign bounce count,existing_us,,,2026-10-08
+DP-0377,datapoints,total_delivered | Campaign : Total delivered,existing_us,,,2026-10-08
+DP-0378,datapoints,total_unique_clicked | total unique campaign clicks,existing_us,,,2026-10-08
+DP-0379,datapoints,total_clicked | Campaign : Total clicked,existing_us,,,2026-10-08
+DP-0380,datapoints,total_purchases | Campaign : Total purchases,existing_us,,,2026-10-08
+DP-0381,datapoints,attributed_revenue | Campaign : Revenue,existing_us,,,2026-10-08
+DP-0382,datapoints,utmtag | UTM Tag,existing_us,,,2026-10-08
+DP-0383,datapoints,id | Campaign Interaction ID,existing_us,,,2026-10-08
+DP-0384,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0385,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0386,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0387,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0388,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0389,datapoints,campaign_unique_id | Campaign ID,existing_us,,,2026-10-08
+DP-0390,datapoints,campaign_name | campaign name,existing_us,,,2026-10-08
+DP-0391,datapoints,campaign_type | Campaign type,existing_us,,,2026-10-08
+DP-0392,datapoints,date_key | Campaign Interaction Date,existing_us,,,2026-10-08
+DP-0393,datapoints,msg_channel | Message Channel,existing_us,,,2026-10-08
+DP-0394,datapoints,msg_subject | Message Subject Header,existing_us,,,2026-10-08
+DP-0395,datapoints,msg_dispatch_id | Message Dispatch ID,existing_us,,,2026-10-08
+DP-0396,datapoints,touchpoint_num | Touchpoint Number,existing_us,,,2026-10-08
+DP-0397,datapoints,order_dt | Order Date,existing_us,,,2026-10-08
+DP-0398,datapoints,order_num | Attributed Order Number,existing_us,,,2026-10-08
+DP-0399,datapoints,event_type | Event Type,existing_us,,,2026-10-08
+DP-0400,datapoints,sent_cnt | Message Sent,existing_us,,,2026-10-08
+DP-0401,datapoints,delivered_cnt | Message Delivered,existing_us,,,2026-10-08
+DP-0402,datapoints,total_click_cnt | Message Clicked,existing_us,,,2026-10-08
+DP-0403,datapoints,unique_click_cnt | Is First Message Click?,existing_us,,,2026-10-08
+DP-0404,datapoints,total_open_cnt | Message Open,existing_us,,,2026-10-08
+DP-0405,datapoints,unique_open_cnt | Is First Message Open?,existing_us,,,2026-10-08
+DP-0406,datapoints,unsubscribed_cnt | Message Unsubscribe,existing_us,,,2026-10-08
+DP-0407,datapoints,bounced_cnt | Message Bounce,existing_us,,,2026-10-08
+DP-0408,datapoints,device_id | Campaign Interaction Device,existing_us,,,2026-10-08
+DP-0409,datapoints,net_qty | Attributed Item Quantity Purchased,existing_us,,,2026-10-08
+DP-0410,datapoints,net_sales | Attributed Order Revenue,existing_us,,,2026-10-08
+DP-0411,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0412,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0413,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0414,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0415,datapoints,loyalty_member_num | Loyalty Member Brand ID,existing_us,,,2026-10-08
+DP-0416,datapoints,loyalty_event_id | loyalty event id,existing_us,,,2026-10-08
+DP-0417,datapoints,loyalty_event_type | loyalty event type,existing_us,,,2026-10-08
+DP-0418,datapoints,loyalty_event_dt | loyalty event date,existing_us,,,2026-10-08
+DP-0419,datapoints,loyalty_channel | loyalty channel,existing_us,,,2026-10-08
+DP-0420,datapoints,loyalty_sub_channel | loyalty sub-channel,existing_us,,,2026-10-08
+DP-0421,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0422,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0423,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0424,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0425,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0426,datapoints,interaction_id | Interaction ID,existing_us,,,2026-10-08
+DP-0427,datapoints,interaction_type | Interaction Type,existing_us,,,2026-10-08
+DP-0428,datapoints,interaction_sub_type | Interaction Sub-Type,existing_us,,,2026-10-08
+DP-0429,datapoints,interaction_dt | Interaction Timestamp,existing_us,,,2026-10-08
+DP-0430,datapoints,campaing_nm | (no business term in workbook),existing_us,,,2026-10-08
+DP-0431,datapoints,interaction_system | (no business term in workbook),existing_us,,,2026-10-08
+DP-0432,datapoints,user_key | GA4 User ID,existing_us,,,2026-10-08
+DP-0433,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0434,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0435,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0436,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0437,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0438,datapoints,last_seen_date | Last Seen Date,existing_us,,,2026-10-08
+DP-0439,datapoints,first_seen_date | First Seen Date,existing_us,,,2026-10-08
+DP-0440,datapoints,is_known_user | Known User Flag,existing_us,,,2026-10-08
+DP-0441,datapoints,is_known_brand_user | Known User Flag,existing_us,,,2026-10-08
+DP-0442,datapoints,daily_event_id | Daily event primary key,existing_us,,,2026-10-08
+DP-0443,datapoints,user_key | GA4 User ID,existing_us,,,2026-10-08
+DP-0444,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
+DP-0445,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
+DP-0446,datapoints,division_code | Division Code,existing_us,,,2026-10-08
+DP-0447,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
+DP-0448,datapoints,global_customer_id | Cross-Brand Customer ID,existing_us,,,2026-10-08
+DP-0449,datapoints,event_date | Event date,existing_us,,,2026-10-08
+DP-0450,datapoints,event_name | Event Name,existing_us,,,2026-10-08
+DP-0451,datapoints,event_params | Event parameters,existing_us,,,2026-10-08
+DP-0452,datapoints,ga_src_channel_grp | GA Source Channel Group,existing_us,,,2026-10-08
+DP-0453,datapoints,brand_code | Product Brand,existing_us,,,2026-10-08
+DP-0454,datapoints,product_country | Product Country,existing_us,,,2026-10-08
+DP-0455,datapoints,product_code | Product ID,existing_us,,,2026-10-08
+DP-0456,datapoints,sku_code | Product SKU Number,existing_us,,,2026-10-08
+DP-0457,datapoints,product_ean | EAN Code,existing_us,,,2026-10-08
+DP-0458,datapoints,product_name | Product Name,existing_us,,,2026-10-08
+DP-0459,datapoints,source_name | Product Information Source,existing_us,,,2026-10-08
+DP-0460,datapoints,level2_desc | Product Line (within Brand),existing_us,,,2026-10-08
+DP-0461,datapoints,level3_desc | Product Sub-Line (within Brand),existing_us,,,2026-10-08
+DP-0462,datapoints,level4_desc | Product Name Reference,existing_us,,,2026-10-08
+DP-0463,datapoints,level6_desc | Product Category (Axe),existing_us,,,2026-10-08
+DP-0464,datapoints,level7_desc | Product Sub-Category (Sub-Axe),existing_us,,,2026-10-08
+DP-0465,datapoints,level8_desc | Product Class,existing_us,,,2026-10-08
+DP-0466,datapoints,level9_desc | Product Function,existing_us,,,2026-10-08
+DP-0467,datapoints,external_product_code | External Product Code,existing_us,,,2026-10-08
+DP-0468,datapoints,external_product_name | External Product Name,existing_us,,,2026-10-08
+DP-0469,datapoints,is_sample | Is Sample,existing_us,,,2026-10-08
+DP-0470,datapoints,main_url | Primary Product URL,existing_us,,,2026-10-08
+DP-0471,datapoints,small_image_url | Product Thumbnail,existing_us,,,2026-10-08
+DP-0472,datapoints,main_image_url | Full Size Product Image,existing_us,,,2026-10-08
+DP-0473,datapoints,product_url | Product Page,existing_us,,,2026-10-08
+DP-0474,datapoints,full_size_variant | Full Size Variant,existing_us,,,2026-10-08
+DP-0475,datapoints,product_short_desc | Short Product Description,existing_us,,,2026-10-08
+DP-0476,datapoints,product_long_desc | Long Product Description,existing_us,,,2026-10-08
+DP-0477,datapoints,product_subtitle | Subtitle for Product,existing_us,,,2026-10-08
+DP-0478,datapoints,availability_code | Availability Code,existing_us,,,2026-10-08
+DP-0479,datapoints,stock_availability | Stock Availability,existing_us,,,2026-10-08
+DP-0480,datapoints,sub_category,requested,,,2026-10-08
+DP-0481,datapoints,Is_Churn_12M_36M,requested,,,2026-10-08
+DEC-0001,decisions,Will the Gold layer support historical snapshots or only the current state? (Q1),open,reporting-coverage,unknown,2026-10-08
+DEC-0002,decisions,Where do derived KPIs live: pre-computed in Gold or standard formulas on building blocks? (Q2),open,reporting-coverage,unknown,2026-10-08
+DEC-0003,decisions,"Are brand_mdm_id / global_mdm_id the same IDs as brand_customer_id / global_customer_id, or differe…",open,identity-ids,unknown,2026-10-08
+DEC-0004,decisions,"One Gold definition of ""contactable"" (Q4)",open,kpi-catalog,unknown,2026-10-08
+DEC-0005,decisions,"One Gold definition of ""engagement"" (Q5)",open,churn-engagement,unknown,2026-10-08
+DEC-0006,decisions,"One Gold definition of ""new buyer"" (Q6)",open,kpi-catalog,unknown,2026-10-08
+DEC-0007,decisions,"One Gold definition of churn, and whether 12-24M and 24M+ granularity is needed (Q7)",open,churn-engagement,unknown,2026-10-08
+DEC-0008,decisions,Where Canada-specific attributes live in the shared SuperGold model (Q8),open,canada-specific,unknown,2026-10-08
+DEC-0009,decisions,"Refresh cadences the Gold layer must support: BAR monthly, CLV quarterly, campaign performance mont…",open,reporting-coverage,unknown,2026-10-08
+DEC-0010,decisions,Migration path from crm_reporting / crm_base to cdp__* tables (Q10),open,governance-scope,unknown,2026-10-08
+DEC-0011,decisions,"The US KPI catalog is the baseline for Canada; Canada classifies each US KPI as adopt as-is, Canada…",decided,kpi-catalog,Workshop 1 participants (decision owner not named),2026-10-08
+DEC-0012,decisions,"Initial focus is the consumer funnel, KPI name and KPI definition; dimensions (MTD, YTD, YoY, month…",decided,kpi-catalog,Workshop 1 participants (decision owner not named),2026-10-08
+DEC-0013,decisions,A dedicated D2C KPI Catalog for Canada will be created to hold Canada-specific definitions and requ…,decided,kpi-catalog,Workshop 1 participants (decision owner not named),2026-10-08
+DEC-0014,decisions,"Maintain as much consistency as possible across US, Canada and LATAM; adopt US definitions where th…",decided,governance-scope,Workshop 1 participants (decision owner not named),2026-10-08
+DEC-0015,decisions,"Gold becomes the primary consumption layer; Genie, SFMC and CDP must consume the data they need fro…",decided,governance-scope,Workshop 1 participants (decision owner not named),2026-10-08
+DEC-0016,decisions,"Review Gold-layer attributes as well as KPIs, starting from the US Gold structure",decided,gold-datapoints,Workshop 1 participants (decision owner not named),2026-10-08
+DEC-0017,decisions,Sequencing for engineering: finalise attributes first or KPIs first (US started with attributes). D…,open,delivery-timeline,Deepti / Andres (pending),2026-10-08
+DEC-0018,decisions,"How should churn / lapsed windows be defined in Gold: one standardised definition, configurable win…",open,churn-engagement,unknown (Bastien raised it),2026-10-08
+CAKPI-001,kpis,Total DDX Contacts,present,reporting-coverage,,2026-10-08
+CAKPI-002,kpis,DDX Contactable (Email+SMS),name_mismatch,reporting-coverage,,2026-10-08
+CAKPI-003,kpis,Engagement Rate (12M),present,reporting-coverage,,2026-10-08
+CAKPI-004,kpis,Active Buyers (1M/3M/YTD/12M),present,reporting-coverage,,2026-10-08
+CAKPI-005,kpis,New Contacts (1M/12M/YTD),gap,reporting-coverage,,2026-10-08
+CAKPI-006,kpis,Email Optin / Unsub dates,gap,reporting-coverage,,2026-10-08
+CAKPI-007,kpis,New Contacts Contactable,gap,reporting-coverage,,2026-10-08
+CAKPI-008,kpis,In-Out Change (Optins minus Unsubs),gap,reporting-coverage,,2026-10-08
+CAKPI-009,kpis,New Buyers (1M/3M/12M/YTD),present,reporting-coverage,,2026-10-08
+CAKPI-010,kpis,Repeat Buyers,present,reporting-coverage,,2026-10-08
+CAKPI-011,kpis,Retained / Reactivated Buyers,present,reporting-coverage,,2026-10-08
+CAKPI-012,kpis,Media Addressable,partial,reporting-coverage,,2026-10-08
+CAKPI-013,kpis,Snapshot month / snapshot_date_key,gap,reporting-coverage,,2026-10-08
+CAKPI-014,kpis,CLV (Customer Lifetime Value),gap,reporting-coverage,,2026-10-08
+CAKPI-015,kpis,Retention Rate,gap,reporting-coverage,,2026-10-08
+CAKPI-016,kpis,AOV (Average Order Value),partial,reporting-coverage,,2026-10-08
+CAKPI-017,kpis,Order Frequency,present,reporting-coverage,,2026-10-08
+CAKPI-018,kpis,"Net Spend by Period (R12, LY, LY2)",partial,reporting-coverage,,2026-10-08
+CAKPI-019,kpis,Acquisition Source breakdown,present,reporting-coverage,,2026-10-08
+CAKPI-020,kpis,Purchase Channel breakdown,present,reporting-coverage,,2026-10-08
+CAKPI-021,kpis,Unique Send / Open / Click,present,reporting-coverage,,2026-10-08
+CAKPI-022,kpis,"Campaign Name, Type, Channel",present,reporting-coverage,,2026-10-08
+CAKPI-023,kpis,Campaign Attribution (3/5/7-day lookback),partial,reporting-coverage,,2026-10-08
+CAKPI-024,kpis,Campaign Revenue,present,reporting-coverage,,2026-10-08
+CAKPI-025,kpis,iOS open filtering,partial,reporting-coverage,,2026-10-08
+CAKPI-026,kpis,Total Profiles (brand_mdm_id),partial,reporting-coverage,,2026-10-08
+CAKPI-027,kpis,Global Profiles (global_mdm_id),name_mismatch,reporting-coverage,,2026-10-08
+CAKPI-028,kpis,Email Coverage %,present,reporting-coverage,,2026-10-08
+CAKPI-029,kpis,Loyalty Active %,present,reporting-coverage,,2026-10-08
+CAKPI-030,kpis,Engaged Prospects L12M %,gap,reporting-coverage,,2026-10-08
+CAKPI-031,kpis,"Churn Rate % (12-24M, 24M+)",gap,reporting-coverage,,2026-10-08
+CAKPI-032,kpis,Segment Type distribution,gap,reporting-coverage,,2026-10-08
+MTG-0001,meetings,Canada KPI workshop 1,,kpi-catalog,,2026-10-08
+QST-0001,questions,"Who said ""start with attributes first"" in workshop 1: Fatima (version 1) or Mezyan (version 2)?",open,kpi-catalog,Bastien,2026-10-08
+QST-0002,questions,"Workshop 1 date, and date of workshop 2",open,kpi-catalog,Bastien,2026-10-08
+QST-0003,questions,"Surnames and entities of Sandra, Damien, Thomas, Oli, Deepti, Andres, Ajantha, Fatima, Mezyan",open,system,Bastien,2026-10-08
+QST-0004,questions,"Are SHUUS, BIOUS, DER, BO the brands Canada excludes?",open,canada-specific,Bastien,2026-10-08
+QST-0005,questions,"Is the ""T2C KPI catalog Canada"" the D2C KPI catalog?",open,kpi-catalog,Deepti,2026-10-08
+QST-0006,questions,"Which brand-specific local definitions (e.g. ""active customer"") does Canada need?",open,governance-scope,Bastien,2026-10-08
+QST-0007,questions,Who decides the open Genie questions DEC-0001 to DEC-0010?,open,governance-scope,Deepti,2026-10-08
+QST-0008,questions,Value format of subcategories and Is_Churn_12M_36M in the LiveRamp file (empty in sample),open,churn-engagement,Damien,2026-10-08
+QST-0009,questions,Will the weekly LiveRamp file be sourced from Gold once it exists?,open,governance-scope,Damien,2026-10-08
+QST-0010,questions,What does Is_Churn_12M_36M mean: one flag or two?,answered,churn-engagement,Bastien,2026-10-08
+REQ-0001,requirements,The Gold layer must contain all data elements used by downstream products and external activation p…,agreed,gold-datapoints,Bastien,2026-10-08
+REQ-0002,requirements,Every KPI used in reporting must be present in the Gold layer requirements (workbook / Canada KPI c…,agreed,kpi-catalog,Bastien,2026-10-08
+REQ-0003,requirements,Support monthly historical snapshots (or equivalent) so the Canada executive scorecard trends can b…,proposed,reporting-coverage,Canada reporting (via Genie analysis),2026-10-08
+REQ-0004,requirements,"Add new consumer status keys (1 month, 12 months, YTD)",proposed,reporting-coverage,Canada reporting (via Genie analysis),2026-10-08
+REQ-0005,requirements,Add first email opt-in date and email unsubscribe event date,proposed,reporting-coverage,Canada reporting (via Genie analysis),2026-10-08
+REQ-0006,requirements,"Provide CLV and retention rate (pre-computed or agreed building blocks), exact AOV, and LY / LY2 ne…",proposed,reporting-coverage,Canada reporting (via Genie analysis),2026-10-08
+REQ-0007,requirements,"Add churn flags (12-24 months, 24+ months) and the engaged prospects L12M flag, or document their d…",proposed,churn-engagement,Canada reporting (via Genie analysis),2026-10-08
+REQ-0008,requirements,"Represent LiveRamp segment_type values (RFMT, Churn Prediction 12M, Likely to Convert 3 Months, Pro…",proposed,churn-engagement,Canada reporting (via Genie analysis),2026-10-08
+REQ-0009,requirements,Map brand_mdm_id / global_mdm_id to brand_customer_id / global_customer_id and state which ID each …,proposed,identity-ids,Canada reporting (via Genie analysis),2026-10-08
+REQ-0010,requirements,"Canada-specific handling: preferred_language EN/FR populated, brand_country CAN, excluded brands SH…",proposed,canada-specific,Canada reporting (via Genie analysis),2026-10-08
+REQ-0011,requirements,Canada KPI catalog must support a 3-month period in addition to MTD / YTD,proposed,kpi-catalog,Canada (raised at workshop 1),2026-10-08
+REQ-0012,requirements,"Review the Gold-layer attributes required for Canada, starting from the US Gold structure",proposed,gold-datapoints,Canada + Reporting team (workshop 1),2026-10-08
+REQ-0013,requirements,"Add product sub-categories (for example anti-aging, suncare) for more granularity than product_cate…",requested,gold-datapoints,"Damien (LiveRamp, Canada)",2026-10-08
+REQ-0014,requirements,"Add Is_Churn_12M_36M: one flag for the 12-36 month window, to create the lapsed buyers segment",requested,churn-engagement,"Damien (LiveRamp, Canada)",2026-10-08
+SRC-0001,sources,"DDX Elevate deck (March 2026), context only",,,,2026-10-08
+SRC-0002,sources,"US workbook Gold Layer Domain Data Requirements (SuperGold, KPI catalog, backlog)",,,,2026-10-08
+SRC-0003,sources,Genie analysis: Canada reports vs SuperGold,,,,2026-10-08
+SRC-0004,sources,"KPI workshop 1 recap, version 1",,,,2026-10-08
+SRC-0005,sources,"KPI workshop 1 summary, version 2 (with roles)",,,,2026-10-08
+SRC-0006,sources,Damien's reply on LiveRamp data elements (relayed by Bastien),,,,2026-10-08
+SRC-0007,sources,"LiveRamp weekly file sample ""LR for RENOVATE.xlsx"" (51 columns)",,,,2026-10-08
+SRC-0008,sources,Bastien's chat messages and draft email to the data teams,,,,2026-10-08
+SRC-0009,sources,Assistant suggestion (not a project source),,,,2026-10-08
+SRC-0010,sources,Databricks Genie prompts A-C (Canada coverage),,,,2026-10-08
+STK-0001,stakeholders,Sandra | SFMC and Attentive data requirements,,,,2026-10-08
+STK-0002,stakeholders,"Damien | Canada team, in charge of LiveRamp (data requirements)",,,,2026-10-08
+STK-0003,stakeholders,Thomas | Genie data requirements,,,,2026-10-08
+STK-0004,stakeholders,Oli | Genie data requirements,,,,2026-10-08
+STK-0005,stakeholders,Deepti | Leads reporting and analytics on the IT side for all zones. Renovate scope: identify the r…,,,,2026-10-08
+STK-0006,stakeholders,Andres | Manages implementation and data engineering on the IT side (all zones). Co-decides deliver…,,,,2026-10-08
+STK-0007,stakeholders,"Fatima | Noted that the US exercise started with attributes first, KPIs later",,,,2026-10-08
+STK-0008,stakeholders,"Ajantha | Project Manager for Renovate, bridging the US, Canada and LATAM teams (self-introduced). …",,,,2026-10-08
+STK-0009,stakeholders,Mezyan | Bastien's manager; Project Manager and responsible for the Canada data teams. Suggested st…,,,,2026-10-08

@@ -1,8 +1,5 @@
 # Skill: impact-check
-
-Trigger: "what is the impact of <decision / requirement / datapoint / blocker>" or a new datapoint or requirement arrives.
-
-1. Locate the item by ID or name (registers, then extracts for context).
-2. Follow links: requirements, datapoints, stories, blockers, stakeholders, other decisions it conflicts with or depends on.
-3. Check by country (USA, LATAM, Canada).
-4. Answer: what is affected, what must be retested, who to inform or convince, risks, open questions. Cite sources and give evidence status. Say what is unknown.
+Trigger: "impact of <decision / requirement / datapoint / change>", or a new requirement arrives.
+1. Locate: `pm.py find <words>`, then `pm.py impact <ID>` (depth 2; depth 3 if asked).
+2. Read only the rows that matter (`pm.py show ID`); open an extract only for missing context.
+3. Answer, 8 lines max: affected items by type (IDs), country (USA / Canada / LATAM), risks, who to inform, open questions (QST). Mark inferred points.

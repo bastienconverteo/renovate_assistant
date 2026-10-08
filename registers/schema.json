@@ -1,0 +1,87 @@
+{
+  "_doc": "Register schema read by tools/pm.py. Columns are in file order. 'title' = columns shown as the row's one-line title. 'owner' = column used for 'who'. 'enums' = allowed values (multi-valued columns are ';'-separated). Any ID written in any cell becomes a link; 'field_refs' columns hold datapoint names that are resolved to DP IDs.",
+  "prefixes": {
+    "ACT": "actions", "ASM": "assumptions", "BLK": "blockers", "COM": "commitments",
+    "DP": "datapoints", "DEC": "decisions", "CAKPI": "kpis", "MTG": "meetings",
+    "QST": "questions", "REQ": "requirements", "SRC": "sources", "STK": "stakeholders", "STO": "stories"
+  },
+  "topics": [
+    "kpi-catalog", "gold-datapoints", "data-team-asks", "reporting-coverage", "churn-engagement",
+    "identity-ids", "canada-specific", "governance-scope", "delivery-timeline", "system"
+  ],
+  "common_enums": {
+    "evidence": ["documented", "verbal", "analysis", "inferred"]
+  },
+  "registers": {
+    "actions": {
+      "columns": ["id", "description", "owner", "due", "status", "blocked_by", "commitment_id", "topic", "links", "evidence", "src", "updated"],
+      "title": ["description"], "owner": "owner",
+      "enums": {"status": ["proposed", "open", "waiting", "in_progress", "on_hold", "done", "cancelled"]}
+    },
+    "assumptions": {
+      "columns": ["id", "statement", "owner", "status", "topic", "links", "evidence", "src", "updated"],
+      "title": ["statement"], "owner": "owner",
+      "enums": {"status": ["open", "partly_confirmed", "confirmed", "invalidated"]}
+    },
+    "blockers": {
+      "columns": ["id", "description", "type", "impact", "owner", "eta", "escalation_level", "status", "topic", "links", "evidence", "src", "updated"],
+      "title": ["description"], "owner": "owner",
+      "enums": {"status": ["open", "resolved"]}
+    },
+    "commitments": {
+      "columns": ["id", "promised_by", "promised_to", "description", "date_promised", "due", "status", "delivery_evidence", "action_id", "topic", "links", "evidence", "src", "updated"],
+      "title": ["description"], "owner": "promised_by",
+      "enums": {"status": ["open", "met", "missed", "cancelled"]}
+    },
+    "datapoints": {
+      "columns": ["id", "name", "label", "view", "domain", "usa", "canada", "latam", "status", "requirement_ids", "evidence", "src", "updated"],
+      "title": ["name", "label"], "owner": "",
+      "enums": {
+        "usa": ["in_supergold", "not_in_supergold"],
+        "canada": ["to_assess", "requested", "needed", "available", "not_needed"],
+        "latam": ["not_assessed", "requested", "needed", "available", "not_needed"],
+        "status": ["existing_us", "requested", "agreed", "rejected"]
+      }
+    },
+    "decisions": {
+      "columns": ["id", "decision", "decided_by", "date", "status", "alternatives", "rationale", "reversible", "requirement_ids", "topic", "links", "evidence", "src", "updated"],
+      "title": ["decision"], "owner": "decided_by",
+      "enums": {"status": ["open", "needs_confirmation", "decided", "superseded"]}
+    },
+    "kpis": {
+      "columns": ["id", "name", "report", "report_source_table", "supergold_fields", "canada_status", "detail", "topic", "links", "evidence", "src", "updated"],
+      "title": ["name"], "owner": "", "field_refs": ["supergold_fields"],
+      "enums": {"canada_status": ["present", "partial", "name_mismatch", "gap"]}
+    },
+    "meetings": {
+      "columns": ["id", "title", "date", "attendees", "summary", "topic", "links", "src", "updated"],
+      "title": ["title"], "owner": "", "enums": {}
+    },
+    "questions": {
+      "columns": ["id", "question", "about", "ask_who", "status", "answer", "topic", "src", "updated"],
+      "title": ["question"], "owner": "ask_who",
+      "enums": {"status": ["open", "answered", "dropped"]}
+    },
+    "requirements": {
+      "columns": ["id", "statement", "requester", "country_scope", "priority", "status", "rationale", "decision_ids", "datapoint_ids", "topic", "links", "evidence", "src", "updated"],
+      "title": ["statement"], "owner": "requester",
+      "enums": {"status": ["proposed", "requested", "agreed", "rejected", "delivered"]}
+    },
+    "sources": {
+      "columns": ["id", "title", "type", "date", "raw", "extract", "notes", "updated"],
+      "title": ["title"], "owner": "", "enums": {}
+    },
+    "stakeholders": {
+      "columns": ["id", "name", "role", "entity", "influence", "links", "notes", "src", "updated"],
+      "title": ["name", "role"], "owner": "", "enums": {}
+    },
+    "stories": {
+      "columns": ["id", "title", "as_a", "i_want", "so_that", "acceptance_criteria", "tests", "countries", "requirement_id", "datapoint_ids", "sprint", "ticket_id", "status", "topic", "links", "src", "updated"],
+      "title": ["title"], "owner": "",
+      "enums": {"status": ["draft", "ready", "in_sprint", "done"]}
+    }
+  },
+  "aux": {
+    "datapoint_defs": {"columns": ["id", "definition", "quality_rules", "owner"], "of": "datapoints"}
+  }
+}

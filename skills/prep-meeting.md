@@ -1,10 +1,6 @@
 # Skill: prep-meeting
-
-Trigger: "Prepare <meeting>".
-
-1. Find the previous meeting's extract and its commitments and actions (registers filtered by meeting, owner, topic).
-2. Check latest ticket state and any ingestion since that meeting (`logs/ingest-log.md`).
-3. Search extracts and summaries for new information affecting open commitments.
-4. Investigate inconsistencies and missing evidence.
-5. Write the brief using `templates/meeting-brief.md` into `briefs/<date>_<meeting>.md`. Give every agenda item and pending action an ID.
-6. Do not change registers. End with the freshness line.
+Trigger: "prepare <meeting>".
+1. `pm.py show MTG-xxxx` of the previous meeting; `pm.py find <attendee>` for their open actions, commitments, questions.
+2. New since then: `logs/ingest-log.md` lines after the meeting date.
+3. Write `briefs/<date>_<meeting>.md` (template `templates/meeting-brief.md`): agenda with IDs, open questions, asks per attendee. Register the meeting: `pm.py add meetings ...`.
+4. Reply: link to the brief + top 3 points.

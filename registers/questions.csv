@@ -1,0 +1,11 @@
+id,question,about,ask_who,status,answer,topic,src,updated
+QST-0001,"Who said ""start with attributes first"" in workshop 1: Fatima (version 1) or Mezyan (version 2)?",STK-0007;STK-0009;MTG-0001,Bastien,open,,kpi-catalog,SRC-0004;SRC-0005,2026-10-08
+QST-0002,"Workshop 1 date, and date of workshop 2",MTG-0001;ACT-0016,Bastien,open,,kpi-catalog,SRC-0004,2026-10-08
+QST-0003,"Surnames and entities of Sandra, Damien, Thomas, Oli, Deepti, Andres, Ajantha, Fatima, Mezyan",STK-0001;STK-0002;STK-0003;STK-0004,Bastien,open,,system,SRC-0008,2026-10-08
+QST-0004,"Are SHUUS, BIOUS, DER, BO the brands Canada excludes?",REQ-0010,Bastien,open,,canada-specific,SRC-0003,2026-10-08
+QST-0005,"Is the ""T2C KPI catalog Canada"" the D2C KPI catalog?",ACT-0009;DEC-0013,Deepti,open,,kpi-catalog,SRC-0005,2026-10-08
+QST-0006,"Which brand-specific local definitions (e.g. ""active customer"") does Canada need?",DEC-0014,Bastien,open,,governance-scope,SRC-0005,2026-10-08
+QST-0007,Who decides the open Genie questions DEC-0001 to DEC-0010?,DEC-0001;DEC-0010,Deepti,open,,governance-scope,SRC-0003,2026-10-08
+QST-0008,Value format of subcategories and Is_Churn_12M_36M in the LiveRamp file (empty in sample),DP-0480;DP-0481,Damien,open,,churn-engagement,SRC-0007,2026-10-08
+QST-0009,Will the weekly LiveRamp file be sourced from Gold once it exists?,REQ-0001;SRC-0007,Damien,open,,governance-scope,SRC-0007,2026-10-08
+QST-0010,What does Is_Churn_12M_36M mean: one flag or two?,DP-0481;REQ-0014,Bastien,answered,One flag for the 12-36 month window (Bastien 2026-10-08),churn-engagement,SRC-0008,2026-10-08

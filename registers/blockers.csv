@@ -1,1 +1,1 @@
-id,description,type,impact,owner,eta,escalation_level,status,linked_ids,evidence_status,source,date_added,last_confirmed
+id,description,type,impact,owner,eta,escalation_level,status,topic,links,evidence,src,updated

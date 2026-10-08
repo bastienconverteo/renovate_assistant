@@ -1,8 +1,6 @@
 # Skill: reconcile-meeting
-
-Trigger: a transcript is ingested after a meeting and Bastien asks to reconcile.
-
-1. Run the ingest steps 1 to 3 for the transcript.
-2. Load the matching brief in `briefs/`. For each agenda item and pending action, classify: answered, partly answered, not discussed, or not resolved. Never close an item by default.
-3. Produce one review: questions answered, proposed actions, changed commitments, explicit decisions, statements that sound like decisions but need confirmation, changed assumptions, new links to historical evidence, remaining questions.
-4. Bastien approves or corrects; then update registers, summaries, STATUS and the ingest log.
+Trigger: a transcript or recap after a meeting.
+1. Ingest it (skill ingest, steps 1-3).
+2. For each item of the brief: answered / partly / not discussed / not resolved. Never close by default.
+3. Register decisions (explicit vs needs_confirmation), actions, commitments, changed assumptions, new questions, all linked to the MTG ID.
+4. Reply in the ingestion format plus one line per unresolved agenda item.

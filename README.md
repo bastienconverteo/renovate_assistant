@@ -1,8 +1,6 @@
-# Renovate Brain
+# Renovate project memory
 
-Project memory for Renovate (L'Oréal super-gold Databricks layer for USA, LATAM, Canada).
-Plain files, versioned with git, readable by any AI tool. Claude is the first interface, not the memory.
+Plain files in git for Renovate (L'Oréal super gold layer in Databricks, Americas). Readable by any AI tool.
 
-Start with `AGENTS.md` (rules for any assistant) and `INDEX.md` (map of everything).
-
-Weekly loop: prepare -> capture -> reconcile -> investigate -> communicate. See `skills/`.
+- Rules: `AGENTS.md`. Design: `ARCHITECTURE.md`. Facts: `CONTEXT.md`. Open items: `index/digest.md`.
+- Query: `python3 tools/pm.py help` (show, impact, find, open, add, set, check, build).

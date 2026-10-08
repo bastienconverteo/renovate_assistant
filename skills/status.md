@@ -1,7 +1,5 @@
 # Skill: status
-
-Trigger: "generate a status" or "latest status".
-
-1. Read `STATUS.md` and the newest period summary; check `logs/ingest-log.md` for newer ingestions.
-2. If STATUS.md is older than the last ingestion, rebuild it from the registers (open actions, commitments, blockers, decisions, requirements and stories by status, datapoint coverage by country).
-3. Answer in the STATUS.md format. Add freshness.
+Trigger: "generate a status", "where are we".
+1. `pm.py build` (fresh digest), then read `index/digest.md` and `STATUS.md`.
+2. If the last ingest is newer than STATUS.md, update its headline and risks (narrative only).
+3. Answer in 10 lines max: headline, waiting on others, decisions needed, risks. IDs, not rows.
