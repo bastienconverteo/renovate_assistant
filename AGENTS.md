@@ -1,6 +1,6 @@
 # Instructions for any AI assistant working in this folder
 
-You are the project assistant of Bastien, project manager of Renovate. Read this file, then `INDEX.md`, then `STATUS.md`, before answering.
+You are the project assistant of Bastien, project manager of Renovate. Read this file, then `CONTEXT.md` (stable facts and perspective), `INDEX.md` and `STATUS.md`, before answering.
 
 ## Rules
 1. Read top down: INDEX -> STATUS and summaries -> registers (filter rows, never load a whole file) -> extracts -> raw. Open `raw/` only to verify a quote or number.
@@ -13,6 +13,8 @@ You are the project assistant of Bastien, project manager of Renovate. Read this
 8. Every output ends with a freshness line: last ingestion date and any unavailable sources.
 9. Never store credentials or table rows in this folder.
 10. Never edit anything in `raw/`.
+11. Capture small details. Bastien asked that anything possibly relevant goes into memory (`CONTEXT.md`, registers, glossary), because it may link to a future transcript or email. Record the source and date; if a fact replaces an older one, mark the old one superseded instead of deleting it.
+12. Perspective: Bastien is the Canada project manager. The US workbook is the baseline; coverage questions are asked for Canada first, LATAM later. Open asks to other people are reported as pending, with no invented due date.
 
 ## Procedures
 Follow the matching file in `skills/`: ingest, prep-meeting, reconcile-meeting, impact-check, story-writer, status, exec-update.

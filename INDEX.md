@@ -5,7 +5,10 @@ Last updated: (not yet populated)
 ## Where things are
 | Need | Go to |
 | --- | --- |
+| Stable facts, perspective, preferences | `CONTEXT.md` |
 | Current state | `STATUS.md` |
+| Prompts to paste in Databricks Genie | `prompts/` |
+| Change sets waiting for approval | `logs/pending/` |
 | Terms, countries, abbreviations | `GLOSSARY.md` |
 | Structured facts | `registers/*.csv` |
 | Topic and period summaries | `summaries/topics/`, `summaries/periods/` |
