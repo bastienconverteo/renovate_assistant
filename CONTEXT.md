@@ -56,3 +56,11 @@ Small details are kept here on purpose: Bastien asked that anything possibly rel
 - Unresolved conflict: version 1 says Fatima noted the US started with attributes first; version 2 says Mezyan suggested starting with attributes. Possibly one person. [to confirm with Bastien]
 - Text quirks: "goal layer" = Gold layer; the Canada sheet is called "T2C KPI catalog Canada" in v2 and "D2C KPI Catalog" in v1 (probably D2C). [inferred]
 - Both summaries agree on the core; details of the comparison in extracts/2026-10-08_workshop_kpi-workshop-1-summary-v2.md.
+
+## Added 2026-10-08 (night): Mezyan's role, Damien's reply, business-first principle
+- Mezyan is Bastien's boss: Project Manager and responsible for the Canada data teams. Probably a separate person from Fatima (workshop summary version 1 says Fatima, version 2 says Mezyan for the attributes-first remark; still unresolved). [documented, Bastien]
+- Damien (Canada team, in charge of LiveRamp) answered the data-element request: he shared the LiveRamp data schema, linked to the file Canada sends weekly, and added two missing fields: sub-categories (anti-aging, suncare, etc.) and Is_Churn_12M_36M (to create a lapsed buyers segment). The schema itself is not in the repo yet (ACT-0019). [documented, Bastien relayed]
+- Neither field exists in SuperGold (product_category exists, no sub-category; no churn flag; lapsed_buyer_status_key has 12, 24, 36 month buckets and may cover part of the churn need, inferred). Registered as REQ-0013, REQ-0014, DP-0480, DP-0481.
+- Genie had also suggested churn 12-24 / 24+, engaged prospects L12M and segment_type. Kept as suggestions to put to the business (ACT-0018).
+- Principle (Bastien): requests from business teams carry more value than attributes predicted by Genie or any other LLM; still record LLM suggestions and ask the business whether they are relevant. Label them "suggested by Genie" versus "requested by <team>". [documented, preference]
+- Source: raw/2026-10-08_message_damien-liveramp-reply.md; extracts/2026-10-08_message_damien-liveramp-reply.md.
