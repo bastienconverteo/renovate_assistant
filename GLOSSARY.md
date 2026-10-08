@@ -45,5 +45,6 @@ Meanings marked (?) are inferred and need confirming. Add terms, synonyms and co
 | USA / Canada / LATAM | The three regions in scope; LATAM countries to list when known | Bastien |
 | Excluded brands (Canada) | SHUUS, BIOUS, DER, BO (to confirm) | Genie analysis |
 | LR | LiveRamp (abbreviation used by Damien) | Damien reply 2026-10-08 |
-| Is_Churn_12M_36M | Flag requested by Damien to create the lapsed buyers segment; exact meaning to confirm (?) | Damien reply 2026-10-08 |
+| Is_Churn_12M_36M | One flag for the 12-36 month churn window, requested by Damien to create the lapsed buyers segment | Damien reply 2026-10-08 |
 | Sub-categories | Product sub-categories (anti-aging, suncare...) finer than product_category, requested by Damien | Damien reply 2026-10-08 |
+| LR for RENOVATE.xlsx | Sample of the LiveRamp weekly file with Damien's two added columns (51 columns); lives in inbox/, not committed because it holds personal data | Bastien 2026-10-08 |

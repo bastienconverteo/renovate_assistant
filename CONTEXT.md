@@ -64,3 +64,9 @@ Small details are kept here on purpose: Bastien asked that anything possibly rel
 - Genie had also suggested churn 12-24 / 24+, engaged prospects L12M and segment_type. Kept as suggestions to put to the business (ACT-0018).
 - Principle (Bastien): requests from business teams carry more value than attributes predicted by Genie or any other LLM; still record LLM suggestions and ask the business whether they are relevant. Label them "suggested by Genie" versus "requested by <team>". [documented, preference]
 - Source: raw/2026-10-08_message_damien-liveramp-reply.md; extracts/2026-10-08_message_damien-liveramp-reply.md.
+
+## Added 2026-10-08 (night, later): LiveRamp file received, churn window
+- The LiveRamp weekly file sample ("LR for RENOVATE.xlsx", 51 columns) is in inbox/ (git-ignored, it holds personal sample rows; only column names are kept in raw/). Extract: extracts/2026-10-08_schema_liveramp-weekly-file.md. [documented]
+- Correction to the entry above: churn_12_24_flag, churn_24plus_flag, engaged_prospects_l12m and segment_type are existing columns of the current Canada LiveRamp file, so they are real business usage, not only Genie predictions. Open point is whether Gold carries or derives them.
+- Is_Churn_12M_36M is one flag for the 12-36 month window (Bastien). Bastien's design question: standardise one definition, offer configurable windows, or keep multiple flags (DEC-0018, open).
+- Bastien needs no follow-up to the data teams for now; he is running the gap analysis between the files himself and will report back (ACT-0020, ACT-0018 on hold). [documented]

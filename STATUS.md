@@ -1,6 +1,6 @@
 # Renovate status (Canada view)
 
-Last refreshed: 2026-10-08 | Sources: Elevate deck, US workbook, Genie analysis, workshop 1 recap, Bastien's messages | Not available: ServiceNow tickets, call transcripts, replies from Sandra, Thomas and Oli, the LiveRamp schema file, Canadian table coverage (Databricks prompts not yet run)
+Last refreshed: 2026-10-08 | Sources: Elevate deck, US workbook, Genie analysis, workshop 1 recap, Bastien's messages | Not available: ServiceNow tickets, call transcripts, replies from Sandra, Thomas and Oli,  Canadian table coverage (Databricks prompts not yet run)
 
 ## What changed
 - Workshop 1 held: US KPI catalog is the baseline for Canada; a dedicated Canada KPI Catalog will be created (Deepti); Gold becomes the primary consumption layer.
@@ -13,8 +13,8 @@ Last refreshed: 2026-10-08 | Sources: Elevate deck, US workbook, Genie analysis,
 
 ## Pending (no due date)
 - Sandra (SFMC, Attentive), Thomas and Oli (Genie): data element lists requested by email on 2026-10-08, no reply yet.
-- Damien (LiveRamp): replied 2026-10-08 with two fields; completeness not confirmed and the schema file not yet received (ACT-0002 in progress, ACT-0019).
-- Bastien: put the Genie-suggested attributes to the business teams for relevance (ACT-0018, proposed).
+- Damien (LiveRamp): replied 2026-10-08 with two fields and the file sample; completeness of his list not confirmed (ACT-0002 in progress).
+- Bastien: running the gap analysis between the files, results to come (ACT-0020). Follow-ups to the data teams on hold at his request (ACT-0018).
 - Deepti (IT lead, reporting and analytics, all zones): share the Canada KPI Catalog ("next step"). Deepti and Andres: communicate delivery deadlines for attributes and KPIs (by email, no date).
 - Ajantha (Renovate project manager across regions): schedule the next workshop (next week, inferred week of 2026-10-12).
 
@@ -26,7 +26,7 @@ Last refreshed: 2026-10-08 | Sources: Elevate deck, US workbook, Genie analysis,
 - The snapshot question (DEC-0001): if Gold is current-state only, Canada's monthly executive scorecard cannot be reproduced from Gold.
 
 ## Decisions needed (open)
-- DEC-0001 snapshots; DEC-0002 derived KPIs pre-computed or formula; DEC-0003 ID naming (brand_mdm_id vs brand_customer_id); DEC-0004 to DEC-0007 (DEC-0007 now includes Damien's Is_Churn_12M_36M) one definition each for contactable, engagement, new buyer, churn; DEC-0008 Canada-specific attributes; DEC-0009 refresh cadences; DEC-0010 migration path; DEC-0017 attributes or KPIs first. Decision owners not yet identified.
+- DEC-0001 snapshots; DEC-0002 derived KPIs pre-computed or formula; DEC-0003 ID naming (brand_mdm_id vs brand_customer_id); DEC-0004 to DEC-0007 (DEC-0007 now includes Damien's Is_Churn_12M_36M); DEC-0018 churn window design one definition each for contactable, engagement, new buyer, churn; DEC-0008 Canada-specific attributes; DEC-0009 refresh cadences; DEC-0010 migration path; DEC-0017 attributes or KPIs first. Decision owners not yet identified.
 
 ## Missing information
 - Canadian table coverage per field (Databricks Prompts A and B not run); KPI sections beyond the four reports analysed; surnames of all named people; who actually said "attributes first" in workshop 1 (Fatima or Mezyan, Bastien's manager); workshop dates; Canada-specific brand definitions (for example "active customer").
