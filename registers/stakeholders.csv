@@ -1,1 +1,9 @@
 id,name,role,entity,influence,interest,stance,preferred_channel,open_topics,notes,source,last_confirmed
+STK-0001,Sandra,SFMC and Attentive data requirements,unknown,,,,,ACT-0001; Genie questions B1-B4,Surname unknown. Emailed by Bastien 2026-10-08,"Bastien message and draft email, 2026-10-08 (see CONTEXT.md)",2026-10-08
+STK-0002,Damien,LiveRamp data requirements,unknown,,,,,ACT-0002; Genie questions B5-B7,Surname unknown. Not mentioned in the workshop 1 recap,"Bastien message and draft email, 2026-10-08 (see CONTEXT.md)",2026-10-08
+STK-0003,Thomas,Genie data requirements,unknown,,,,,ACT-0003; Genie questions B8-B10,Surname unknown,"Bastien message and draft email, 2026-10-08 (see CONTEXT.md)",2026-10-08
+STK-0004,Oli,Genie data requirements,unknown,,,,,ACT-0003; Genie questions B8-B10,Surname unknown,"Bastien message and draft email, 2026-10-08 (see CONTEXT.md)",2026-10-08
+STK-0005,Deepti,Creates the Canada KPI Catalog; aligns delivery deadlines with Andres,unknown,,,,email (deadlines),ACT-0009; ACT-0013; ACT-0014; COM-0001; COM-0002,Entity unknown,extracts/2026-10-08_workshop_kpi-workshop-1-summary.md,2026-10-08
+STK-0006,Andres,"Co-decides delivery deadlines and attributes-versus-KPIs sequencing with Deepti (engineering side, inferred)",unknown,,,,,ACT-0013; ACT-0014,A person named Andres appears on the identity resolution and Cassandra workstreams in the Elevate deck; not verified to be the same,extracts/2026-10-08_workshop_kpi-workshop-1-summary.md,2026-10-08
+STK-0007,Fatima,"Noted that the US exercise started with attributes first, KPIs later","unknown (US side, inferred)",,,,,DEC-0017,"A Fatima Ahmed reported 4 backlog items and a Fatima appears on the ""Gold the new reporting"" workstream; not verified to be the same",extracts/2026-10-08_workshop_kpi-workshop-1-summary.md,2026-10-08
+STK-0008,Ajantha,Schedules the Canada KPI workshops,unknown,,,,,ACT-0016; COM-0003,,extracts/2026-10-08_workshop_kpi-workshop-1-summary.md,2026-10-08

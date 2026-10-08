@@ -1,1 +1,3 @@
 id,statement,owner,status,evidence_status,source,date_added,last_confirmed
+ASM-0001,"Canada can reuse most of the US SuperGold design and needs to add new endpoints (workshop 1: the US KPI catalog is the baseline, US definitions adopted where they work)",Bastien,open until the coverage analysis and KPI review,documented,"Bastien message and draft email, 2026-10-08 (see CONTEXT.md); extracts/2026-10-08_workshop_kpi-workshop-1-summary.md",2026-10-08,2026-10-08
+ASM-0002,The list of KPIs used in Canada reporting is available in Databricks (Genie already cross-referenced four reports),Bastien,partly confirmed,documented,extracts/2026-10-08_genie-analysis_canada-kpi-cross-reference.md,2026-10-08,2026-10-08

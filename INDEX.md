@@ -1,6 +1,6 @@
 # Index
 
-Last updated: (not yet populated)
+Last updated: 2026-10-08
 
 ## Where things are
 | Need | Go to |
@@ -8,7 +8,7 @@ Last updated: (not yet populated)
 | Stable facts, perspective, preferences | `CONTEXT.md` |
 | Current state | `STATUS.md` |
 | Prompts to paste in Databricks Genie | `prompts/` |
-| Change sets waiting for approval | `logs/pending/` |
+| Applied change sets (history) | `logs/applied/` |
 | Terms, countries, abbreviations | `GLOSSARY.md` |
 | Structured facts | `registers/*.csv` |
 | Topic and period summaries | `summaries/topics/`, `summaries/periods/` |
@@ -21,7 +21,8 @@ Last updated: (not yet populated)
 | What was ingested when | `logs/ingest-log.md` |
 
 ## Active topics
-(none yet; add one line per topic: name, owner, latest summary file, last updated)
+- Canada KPI catalog and Gold coverage | owner Bastien | `summaries/topics/kpi-catalog-and-gold-coverage-canada.md` | 2026-10-08
+- Weekly summary | `summaries/periods/2026-W41.md` | 2026-10-08
 
 ## Open sources and tools
 - Calls: Biscotti transcripts (manual export or MCP, to be connected)

@@ -41,3 +41,10 @@ Small details are kept here on purpose: Bastien asked that anything possibly rel
 - Refresh cadences in use: BAR KPIs monthly, CLV quarterly, campaign performance monthly, LiveRamp weekly or as needed. BAR dashboard is in PowerBI on `cdp__bar_kpi_v` (52 KPIs). [documented by Genie]
 - Genie's notebook is design-level (report logic versus SuperGold definitions). It did not test which Canadian tables hold which fields, fill rates or value sets: prompts A and B remain useful. [documented]
 - Correction: SuperGold has 479 field rows (not 454); counts in earlier notes are fixed.
+
+## Added 2026-10-08 (night): KPI workshop 1 recap
+- First Canada KPI workshop held (date not stated); written recap in raw/2026-10-08_workshop-summary_kpi-workshop-1.md, extract in extracts/. [documented]
+- Agreed: US KPI catalog is the baseline; Canada classifies KPIs as Match / Gap / New; first focus is consumer funnel, KPI name and definition (dimensions later); a dedicated Canada D2C KPI catalog will be created; Gold becomes the primary consumption layer; keep consistency across US, Canada and LATAM and adopt US definitions where they work. Canada needs a 3-month period in addition to MTD / YTD. No firm delivery deadline. [documented]
+- People: Deepti (creates the Canada KPI catalog; aligns deadlines with Andres), Andres, Fatima (noted the US exercise started with attributes first), Ajantha (schedules workshops). Roles and entities unknown. These are Canada workshop participants and are tracked (supersedes "US names are not tracked" for them; US backlog reporters in the workbook remain untracked). [documented]
+- Next workshop: Ajantha to schedule for next week (inferred week of 2026-10-12); it starts with a manageable set of priority / obvious KPIs. [documented]
+- Registers were populated on 2026-10-08 after Bastien's "approve all" (change sets 001 and 002); the workshop recap was applied in the same pass because it came with the instruction to add it to memory. Bastien can correct any row.
