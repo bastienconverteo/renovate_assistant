@@ -31,3 +31,13 @@ Small details are kept here on purpose: Bastien asked that anything possibly rel
 - Ingestion by dropping files in `inbox/` or pasting emails and ticket threads (ServiceNow) in the chat; approves change sets before registers change.
 - Folder lives on his Mac at ~/Documents/Projects/renovate; git identity bastien.duthu@converteo.com; remote renovate_assistant on GitHub (pushed by Bastien).
 - IT approved the proof of concept as a personal tool (no compliance gate for now); revisit before sharing wider.
+
+## Added 2026-10-08 (evening): Canada reporting vs SuperGold (from Genie's analysis, verified by Claude against the workbook)
+- A **KPI catalog workshop** is upcoming (date and attendees unknown). Genie's notebook was prepared for it. Source: raw/2026-10-08_genie-analysis_canada-kpi-cross-reference.md. [documented]
+- Canada reporting assets analysed: DDX CA B2C Executive Report (DDX Scorecard, source `fact_customer_segment_by_brand`; CLV Deepdive, source `vw_fact_order_sales`), CA B2C Campaign Performance Report (`fact_message_tracker`), Liveramp Customer 360 Canada dashboard (`vw_customer360_liveramp`). Current reports query `crm_reporting.*` and `crm_base.*`. [documented]
+- Biggest finding: Canada executive reports are monthly snapshots (`snapshot_year_month`); SuperGold is current-state only. Also missing in SuperGold: new consumer status keys, email opt-in and unsubscribe event dates, CLV, retention, churn flags, engaged prospects flag, segment_type. 14 of 32 report KPIs are fully present. [documented, gaps verified]
+- Canada uses `brand_mdm_id` / `global_mdm_id` (Reltio MDM) where SuperGold uses `brand_customer_id` / `global_customer_id`: unresolved. [documented]
+- Canada-specific needs: `preferred_language` EN/FR (the field already exists in `cdp__identity_v`), `brand_country = 'CAN'`, excluded brands SHUUS, BIOUS, DER, BO (to confirm), French-language campaigns in SFMC. [documented by Genie]
+- Refresh cadences in use: BAR KPIs monthly, CLV quarterly, campaign performance monthly, LiveRamp weekly or as needed. BAR dashboard is in PowerBI on `cdp__bar_kpi_v` (52 KPIs). [documented by Genie]
+- Genie's notebook is design-level (report logic versus SuperGold definitions). It did not test which Canadian tables hold which fields, fill rates or value sets: prompts A and B remain useful. [documented]
+- Correction: SuperGold has 479 field rows (not 454); counts in earlier notes are fixed.

@@ -13,7 +13,7 @@ Business requirements for the data in the Gold Layer, by domain and sub-domain, 
 ## Visible sheets
 | Sheet | Size | What it holds |
 | --- | --- | --- |
-| All Domains - SuperGold | 454 fields | The "super gold" field list: domain, sub-domain, business term, current SG field name, current SG table, business definition, survivorship rule |
+| All Domains - SuperGold | 479 field rows (357 distinct field names) | The "super gold" field list: domain, sub-domain, business term, current SG field name, current SG table, business definition, survivorship rule |
 | Values Dictionary - SuperGold | 64 attributes with allowed values | Value lists and meanings per attribute (HighTouch attribute name, gold attribute name) |
 | Diamond Schema BRD | about 570 rows | Target state ("Diamond") of the same fields: optional rename and Diamond table |
 | Diamond Row-By-Row Changes | about 580 rows | Per field: type of change for Diamond, reason, possible CDP impact (RAG), renamed column; plus a table of change categories |
@@ -29,10 +29,10 @@ Business requirements for the data in the Gold Layer, by domain and sub-domain, 
 30 hidden sheets are older versions, gap analyses, data quality and BAR variants (e.g. All Domains (Old Version), KPI Catalog, D2C KPI Catalog - LU 2-21 (WIP), BAR Activation KPIs - old, Renovate Timeline, Gap Analysis, SG Data Quality Backlog, DQ Insights). They were not analysed in this pass.
 
 ## SuperGold field list (documented)
-- 454 fields in 8 domains: Customer 239; Transactions 60; Campaign 54; Product 27; Customer - Contacts 26; Website Browsing (GA4) 21; Interactions 19; Customer - AA Models 8.
-- Spread over 21 SuperGold views (cdp__...), largest: beauty profile 53, BAR KPIs 52, 3P demographic 46, order header 30, campaign interaction metrics 28, product hierarchy 27, loyalty 26, contact info 26, order line item 26, campaign master 26.
+- 479 field rows (357 distinct field names, because the same field repeats across views) in 8 domains: Customer 245; Transactions 76; Campaign 54; Customer - Contacts 27; Product 27; Interactions 21; Website Browsing (GA4) 21; Customer - AA Models 8. Correction 2026-10-08: the first version said 454 because it skipped 25 rows that have a field name but no business term (recent additions such as preferred_language).
+- Spread over 21 SuperGold views (cdp__...), largest: beauty profile 54, BAR KPIs 52, 3P demographic 46, order header 30, campaign interaction metrics 28, contact info 27, order line item 27, product hierarchy 27, loyalty 26, campaign master 26.
 - Two fields point to cdp__acquisition_interaction_data_v with the note "to be relocated to cdp__transactional_kpis_v".
-- Survivorship rule given for 441 of 454 fields.
+- Survivorship rule given for 445 of 479 field rows.
 - The sheet is US-based: the definition of Brand Country says "For LUSA, will be 'USA'". No LATAM or Canada indication per field. (inferred: coverage for LATAM and Canada is unknown)
 
 ## KPI catalog "D2C KPI Catalog - LU 5-8" (documented)

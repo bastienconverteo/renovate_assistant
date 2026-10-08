@@ -1,5 +1,7 @@
 # Databricks Genie prompts: Canada coverage of the US SuperGold layer
 
+> Update 2026-10-08 (evening): Genie's first notebook (raw/2026-10-08_genie-analysis_canada-kpi-cross-reference.md) already compared four Canada reports with the SuperGold definitions. It covers design-level KPI coverage, not data. So: Prompts A and B are still needed for data-level evidence (which Canadian tables hold each field, fill rates, value differences). Prompt C is only needed for KPI catalog sections and reports that the notebook did not cover (it did the Executive Scorecard, CLV Deepdive, Campaign Performance and LiveRamp Customer 360).
+
 How to use
 1. Open Genie (or the Databricks assistant) on the tables that hold the Canadian data. Attach `Gold Layer Domain Data Requirements.xlsx` (copy in `raw/`).
 2. Paste Prompt A, read the answer, then run Prompt B once per batch listed below and Prompt C per KPI section.
@@ -44,16 +46,16 @@ Return two CSV blocks (text, comma-separated, with header):
 
 Rules: read-only, aggregates only, no personal data in the output, one row per field, "unknown" rather than assumptions, and state any filter you applied (for example brand or date range).
 
-### Batches (field counts from the workbook)
+### Batches (field rows per sub-domain, from the workbook: 479 in total)
 | Batch | Domain: Sub-Domain (fields) |
 | --- | --- |
-| 1 | Customer: Identity (10), Contactability (11), Acquisition Data (7) |
-| 2 | Customer - Contacts: Contact Info (26) |
+| 1 | Customer: Identity (13), Contactability (11), Acquisition Data (9) |
+| 2 | Customer - Contacts: Contact Info (27) |
 | 3 | Customer: Loyalty (26); Interactions: Loyalty Interactions (10) |
-| 4 | Customer: BMDM (Beauty Data) (53); Customer - AA Models: Predictive attributes (8) |
+| 4 | Customer: BMDM (Beauty Data) (54); Customer - AA Models: Predictive attributes (8) |
 | 5 | Customer: 3P Demographic Data (46) |
-| 6 | Customer: Interaction KPIs (7), Acquisition / Interaction KPIs (5); Interactions: Interaction Tracking (9) |
-| 7 | Transactions: Order Header (30), Order Line (26), Line Adjustments (4) |
+| 6 | Customer: Interaction KPIs (7), Acquisition / Interaction KPIs (5); Interactions: Interaction Tracking (11) |
+| 7 | Transactions: Order Header (30), Order Line (27), Line Adjustments (19) |
 | 8 | Customer: Transactional KPIs (22), BAR KPI (52) |
 | 9 | Campaign: Campaign Master (26), Campaign Interactions (28) |
 | 10 | Product: Product Dimensions (27) |
