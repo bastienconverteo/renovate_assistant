@@ -37,14 +37,27 @@ Meanings marked (?) are inferred and need confirming. Add terms, synonyms and co
 | CLV | Customer lifetime value = retention x AOV x frequency (computed) | Genie analysis |
 | AOV | Average order value | Workbook |
 | RFMT | Segment type used by LiveRamp (expansion unknown) | Genie analysis (?) |
-| SSOI | Value of sms_double_optin meaning opted in (?) | Genie analysis (?) |
+| SSOI | Value of sms_double_optin meaning opted in | SRC-0013 |
 | MTD / YTD / YoY / R12 / LY | Month to date, year to date, year over year, rolling 12 months, last year | KPI catalog |
 | WAF | Well Architecture Framework (enhancement of the DDX architecture) | Elevate deck |
 | Lakebase | Databricks operational database planned to replace Cassandra | Elevate deck |
 | B2C / B2B | Consumer and professional businesses; B2C moves first | Elevate deck |
 | USA / Canada / LATAM | The three regions in scope; LATAM countries to list when known | Bastien |
-| Excluded brands (Canada) | SHUUS, BIOUS, DER, BO (to confirm) | Genie analysis |
+| Excluded brands (Canada) | Per use case. SHUUS and BIOUS excluded by default; no other brand unless specified (DEC-0022). Genie: DER, BO in some contexts; AEO (Aesop) in retention and new repeat rate | Bastien 2026-10-14; SRC-0013 |
 | LR | LiveRamp (abbreviation used by Damien) | Damien reply 2026-10-08 |
 | Is_Churn_12M_36M | One flag for the 12-36 month churn window, requested by Damien to create the lapsed buyers segment | Damien reply 2026-10-08 |
 | Sub-categories | Product sub-categories (anti-aging, suncare...) finer than product_category, requested by Damien | Damien reply 2026-10-08 |
 | LR for RENOVATE.xlsx | Sample of the LiveRamp weekly file with Damien's two added columns (51 columns); lives in inbox/, not committed because it holds personal data | Bastien 2026-10-08 |
+| LUSA SuperGold | The US (L'Oréal USA) SuperGold, owned by Shabri; Deepti owns the Americas Gold and takes final decisions | Bastien 2026-10-14 |
+| crm_base / crm_reporting / crm_analytics | Canada legacy schemas: crm_base = PII side in stg_canada_catalog (cleartext IDs); crm_reporting and crm_analytics = analytical side in prod_canada_catalog (md5-hashed IDs) | SRC-0013 |
+| fact_customer_segment_by_brand | Canada backbone table: customer x brand x month snapshot, 58 months since Jan 2022 | SRC-0013 |
+| churn_status_key | Canada churn key: DDM_CHRN_NA, DDM_CHRN_L12M (active), DDM_CHRN_L12_24M, DDM_CHRN_L24M_PLUS | SRC-0013 |
+| pref_language | Canada language field (18 raw values, 29% unknown); called preferred_language in SuperGold | SRC-0013 |
+| ACD / LDB | ACD in some tables = LDB (L'Oréal Dermatological Beauty) | SRC-0013 |
+| BIOCA, GAB | Canada-only brands: Biotherm Canada, Giorgio Armani Beauty Canada | SRC-0013 |
+| AEO | Aesop brand code | SRC-0013 |
+| Buyer Analysis | Canada report named in KPI formulas, missing from Genie's report inventory | SRC-0013 |
+| source_customer_id | ID as it arrives from a source system (Salesforce/Demandware, MARS, CEGID); one customer can have several | Genie 2026-10-14 (raw/2026-10-14_genie-answer_ddx-id-hierarchy.md) |
+| brand_mdm_id / brand_customer_id | Both brand-level IDs (same identity level) but two distinct ID systems: 1:1 mapping, values never equal (0 of 14.2M rows). Join via dim_customer_bridge. LiveRamp uses brand_mdm_id; SuperGold lists brand_customer_id | Genie 2026-10-14 (value check) |
+| global_mdm_id / global_customer_id | Cross-brand person ID (one person across brands); ~10.5M brand IDs → 8.0M global IDs in Canada. Same renaming as above | Genie 2026-10-14 |
+| ID uniqueness | Canada IDs are unique only per brand_code: always join on brand + ID | Genie 2026-10-14 |

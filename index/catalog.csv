@@ -14,16 +14,24 @@ ACT-0012,actions,Review Gold-layer attributes required for Canada,open,gold-data
 ACT-0013,actions,Confirm whether attributes or KPIs need to be finalised first for engineering,open,gold-datapoints,Deepti / Andres,2026-10-08
 ACT-0014,actions,"Determine the specific timeline for attribute and KPI delivery, then share the final timeline by em…",waiting,delivery-timeline,Deepti (with Andres),2026-10-08
 ACT-0015,actions,Conduct a focused workshop on identified KPI discrepancies and priority KPIs,open,kpi-catalog,All,2026-10-08
-ACT-0016,actions,Schedule the follow-up meeting for next week to review specific KPI discrepancies,open,kpi-catalog,Ajantha,2026-10-08
+ACT-0016,actions,Schedule the follow-up meeting for next week to review specific KPI discrepancies,done,kpi-catalog,Ajantha,2026-10-15
 ACT-0017,actions,Prepare a manageable set of priority / obvious KPIs with Match / Gap / New status for the next work…,proposed,kpi-catalog,Bastien,2026-10-08
-ACT-0018,actions,"Ask Damien whether the Genie-suggested attributes (churn 12-24 and 24+ flags, engaged_prospects_l12…",on_hold,data-team-asks,Bastien,2026-10-08
+ACT-0018,actions,"Ask Damien whether the Genie-suggested attributes (churn 12-24 and 24+ flags, engaged_prospects_l12…",on_hold,data-team-asks,Bastien,2026-10-14
 ACT-0019,actions,Provide the LiveRamp data schema (current weekly file) from Damien so it can be ingested; only his …,done,data-team-asks,Bastien,2026-10-08
 ACT-0020,actions,"Continue the gap analysis between the files (LiveRamp file, SuperGold, Canada KPI list) and report …",in_progress,data-team-asks,Bastien,2026-10-08
+ACT-0021,actions,Prepare Canada's position on DEC-0001 to DEC-0010 (preferred option and adaptation cost of each alt…,proposed,governance-scope,Bastien (with Mezyan),2026-10-14
+ACT-0022,actions,"Add In/Out flow, media addressable, retained vs reactivated, campaign attribution 3/5/7 days and ne…",open,kpi-catalog,Bastien,2026-10-14
+ACT-0023,actions,Ask Genie the 9 follow-up questions (section F of the open-questions table) and paste the answers,open,reporting-coverage,Bastien,2026-10-14
+ACT-0024,actions,"Send Deepti and Ajantha the recap of workshop 2 and the remaining questions (line by line, offline)",open,kpi-catalog,Bastien,2026-10-15
+ACT-0025,actions,"Compile Canada transformation and standardisation rules (Scorecard, CLV, Campaign notebooks) as req…",open,governance-scope,Bastien,2026-10-15
+ACT-0026,actions,"List Canada analytical use cases beyond reporting (CLV model, segment models, LiveRamp, SFMC, Atten…",open,governance-scope,Bastien,2026-10-15
+ACT-0027,actions,Send follow-up of workshop 2 and schedule next meeting next week same time (~2026-10-22); agenda sh…,open,kpi-catalog,Ajantha,2026-10-15
+ACT-0028,actions,"Answer in writing: Canada brand MDM ID origin, PII location, snapshots on Gold tables, CLV computed…",open,kpi-catalog,Deepti,2026-10-15
 ASM-0001,assumptions,Canada can reuse most of the US SuperGold design and needs to add new endpoints (workshop 1: the US…,open,governance-scope,Bastien,2026-10-08
 ASM-0002,assumptions,The list of KPIs used in Canada reporting is available in Databricks (Genie already cross-reference…,partly_confirmed,reporting-coverage,Bastien,2026-10-08
 COM-0001,commitments,"Create and share the dedicated Canada KPI Catalog based on the US baseline, to identify gaps and lo…",open,kpi-catalog,Deepti,2026-10-08
 COM-0002,commitments,"Determine and email the delivery timeline for attributes and KPIs, possibly separate deadlines. No …",open,delivery-timeline,Deepti (aligning with Andres),2026-10-08
-COM-0003,commitments,Schedule the follow-up workshop for next week to review specific KPI discrepancies,open,kpi-catalog,Ajantha,2026-10-08
+COM-0003,commitments,Schedule the follow-up workshop for next week to review specific KPI discrepancies,met,kpi-catalog,Ajantha,2026-10-15
 DP-0001,datapoints,brand_code | Brand Code,existing_us,,,2026-10-08
 DP-0002,datapoints,brand_country | Brand Country,existing_us,,,2026-10-08
 DP-0003,datapoints,brand_customer_id | Brand Customer ID,existing_us,,,2026-10-08
@@ -505,24 +513,31 @@ DP-0478,datapoints,availability_code | Availability Code,existing_us,,,2026-10-0
 DP-0479,datapoints,stock_availability | Stock Availability,existing_us,,,2026-10-08
 DP-0480,datapoints,sub_category,requested,,,2026-10-08
 DP-0481,datapoints,Is_Churn_12M_36M,requested,,,2026-10-08
-DEC-0001,decisions,Will the Gold layer support historical snapshots or only the current state? (Q1),open,reporting-coverage,unknown,2026-10-08
-DEC-0002,decisions,Where do derived KPIs live: pre-computed in Gold or standard formulas on building blocks? (Q2),open,reporting-coverage,unknown,2026-10-08
-DEC-0003,decisions,"Are brand_mdm_id / global_mdm_id the same IDs as brand_customer_id / global_customer_id, or differe…",open,identity-ids,unknown,2026-10-08
-DEC-0004,decisions,"One Gold definition of ""contactable"" (Q4)",open,kpi-catalog,unknown,2026-10-08
-DEC-0005,decisions,"One Gold definition of ""engagement"" (Q5)",open,churn-engagement,unknown,2026-10-08
-DEC-0006,decisions,"One Gold definition of ""new buyer"" (Q6)",open,kpi-catalog,unknown,2026-10-08
-DEC-0007,decisions,"One Gold definition of churn, and whether 12-24M and 24M+ granularity is needed (Q7)",open,churn-engagement,unknown,2026-10-08
-DEC-0008,decisions,Where Canada-specific attributes live in the shared SuperGold model (Q8),open,canada-specific,unknown,2026-10-08
-DEC-0009,decisions,"Refresh cadences the Gold layer must support: BAR monthly, CLV quarterly, campaign performance mont…",open,reporting-coverage,unknown,2026-10-08
-DEC-0010,decisions,Migration path from crm_reporting / crm_base to cdp__* tables (Q10),open,governance-scope,unknown,2026-10-08
-DEC-0011,decisions,"The US KPI catalog is the baseline for Canada; Canada classifies each US KPI as adopt as-is, Canada…",decided,kpi-catalog,Workshop 1 participants (decision owner not named),2026-10-08
-DEC-0012,decisions,"Initial focus is the consumer funnel, KPI name and KPI definition; dimensions (MTD, YTD, YoY, month…",decided,kpi-catalog,Workshop 1 participants (decision owner not named),2026-10-08
-DEC-0013,decisions,A dedicated D2C KPI Catalog for Canada will be created to hold Canada-specific definitions and requ…,decided,kpi-catalog,Workshop 1 participants (decision owner not named),2026-10-08
-DEC-0014,decisions,"Maintain as much consistency as possible across US, Canada and LATAM; adopt US definitions where th…",decided,governance-scope,Workshop 1 participants (decision owner not named),2026-10-08
-DEC-0015,decisions,"Gold becomes the primary consumption layer; Genie, SFMC and CDP must consume the data they need fro…",decided,governance-scope,Workshop 1 participants (decision owner not named),2026-10-08
-DEC-0016,decisions,"Review Gold-layer attributes as well as KPIs, starting from the US Gold structure",decided,gold-datapoints,Workshop 1 participants (decision owner not named),2026-10-08
-DEC-0017,decisions,Sequencing for engineering: finalise attributes first or KPIs first (US started with attributes). D…,open,delivery-timeline,Deepti / Andres (pending),2026-10-08
-DEC-0018,decisions,"How should churn / lapsed windows be defined in Gold: one standardised definition, configurable win…",open,churn-engagement,unknown (Bastien raised it),2026-10-08
+DEC-0001,decisions,Will the Gold layer support historical snapshots or only the current state? (Q1),open,reporting-coverage,unknown,2026-10-14
+DEC-0002,decisions,Where do derived KPIs live: pre-computed in Gold or standard formulas on building blocks? (Q2),open,reporting-coverage,unknown,2026-10-14
+DEC-0003,decisions,"Are brand_mdm_id / global_mdm_id the same IDs as brand_customer_id / global_customer_id, or differe…",open,identity-ids,unknown,2026-10-14
+DEC-0004,decisions,"One Gold definition of ""contactable"" (Q4)",open,kpi-catalog,unknown,2026-10-14
+DEC-0005,decisions,"One Gold definition of ""engagement"" (Q5)",open,churn-engagement,unknown,2026-10-14
+DEC-0006,decisions,"One Gold definition of ""new buyer"" (Q6)",open,kpi-catalog,unknown,2026-10-14
+DEC-0007,decisions,"One Gold definition of churn, and whether 12-24M and 24M+ granularity is needed (Q7)",open,churn-engagement,unknown,2026-10-14
+DEC-0008,decisions,Where Canada-specific attributes live in the shared SuperGold model (Q8),open,canada-specific,unknown,2026-10-14
+DEC-0009,decisions,"Refresh cadences the Gold layer must support: BAR monthly, CLV quarterly, campaign performance mont…",open,reporting-coverage,unknown,2026-10-14
+DEC-0010,decisions,Migration path from crm_reporting / crm_base to cdp__* tables (Q10),open,governance-scope,unknown,2026-10-14
+DEC-0011,decisions,"The US KPI catalog is the baseline for Canada; Canada classifies each US KPI as adopt as-is, Canada…",decided,kpi-catalog,Renovate KPI Workshop participants (MTG-0001; decision owner not named),2026-10-09
+DEC-0012,decisions,"Initial focus is the consumer funnel, KPI name and KPI definition; dimensions (MTD, YTD, YoY, month…",decided,kpi-catalog,Renovate KPI Workshop participants (MTG-0001; decision owner not named),2026-10-09
+DEC-0013,decisions,A dedicated D2C KPI Catalog for Canada will be created to hold Canada-specific definitions and requ…,decided,kpi-catalog,Renovate KPI Workshop participants (MTG-0001; decision owner not named),2026-10-09
+DEC-0014,decisions,"Maintain as much consistency as possible across US, Canada and LATAM; adopt US definitions where th…",decided,governance-scope,Renovate KPI Workshop participants (MTG-0001; decision owner not named),2026-10-09
+DEC-0015,decisions,"Gold becomes the primary consumption layer; Genie, SFMC and CDP must consume the data they need fro…",decided,governance-scope,Renovate KPI Workshop participants (MTG-0001; decision owner not named),2026-10-09
+DEC-0016,decisions,"Review Gold-layer attributes as well as KPIs, starting from the US Gold structure",decided,gold-datapoints,Renovate KPI Workshop participants (MTG-0001; decision owner not named),2026-10-09
+DEC-0017,decisions,Sequencing for engineering: finalise attributes first or KPIs first (US started with attributes). D…,open,delivery-timeline,Deepti / Andres (pending),2026-10-09
+DEC-0018,decisions,"How should churn / lapsed windows be defined in Gold: one standardised definition, configurable win…",open,churn-engagement,unknown (Bastien raised it),2026-10-14
+DEC-0019,decisions,Canada business owners of KPI definitions and of project completion for Canada are Mezyan (STK-0009…,decided,governance-scope,Bastien,2026-10-09
+DEC-0020,decisions,"Canada weighs in on every Gold design decision (DEC-0001 to DEC-0010) before Deepti decides, to min…",decided,governance-scope,Bastien (with Mezyan),2026-10-09
+DEC-0021,decisions,KPIs flagged as missing from the workbook but needed for Canada operations go on the list of KPIs n…,decided,kpi-catalog,Bastien,2026-10-14
+DEC-0022,decisions,Brand exclusions are set per use case: SHUUS and BIOUS are excluded by default; no other brand is e…,decided,canada-specific,Bastien,2026-10-14
+DEC-0023,decisions,"Gold design governance: Canada (Bastien, Mezyan) decides with Deepti, the Americas owner who takes …",decided,governance-scope,Bastien,2026-10-14
+DEC-0024,decisions,Canada additions follow the US process: list gaps as rows in the workbook (SuperGold or KPI catalog…,decided,governance-scope,"Andres, Deepti (stated)",2026-10-15
+DEC-0025,decisions,New data sources go into Renovate; reporting-only external data may be joined outside; PII never le…,decided,governance-scope,Andres (stated),2026-10-15
 CAKPI-001,kpis,Total DDX Contacts,present,reporting-coverage,,2026-10-08
 CAKPI-002,kpis,DDX Contactable (Email+SMS),name_mismatch,reporting-coverage,,2026-10-08
 CAKPI-003,kpis,Engagement Rate (12M),present,reporting-coverage,,2026-10-08
@@ -555,31 +570,53 @@ CAKPI-029,kpis,Loyalty Active %,present,reporting-coverage,,2026-10-08
 CAKPI-030,kpis,Engaged Prospects L12M %,gap,reporting-coverage,,2026-10-08
 CAKPI-031,kpis,"Churn Rate % (12-24M, 24M+)",gap,reporting-coverage,,2026-10-08
 CAKPI-032,kpis,Segment Type distribution,gap,reporting-coverage,,2026-10-08
-MTG-0001,meetings,Canada KPI workshop 1,,kpi-catalog,,2026-10-08
-QST-0001,questions,"Who said ""start with attributes first"" in workshop 1: Fatima (version 1) or Mezyan (version 2)?",open,kpi-catalog,Bastien,2026-10-08
-QST-0002,questions,"Workshop 1 date, and date of workshop 2",open,kpi-catalog,Bastien,2026-10-08
-QST-0003,questions,"Surnames and entities of Sandra, Damien, Thomas, Oli, Deepti, Andres, Ajantha, Fatima, Mezyan",open,system,Bastien,2026-10-08
-QST-0004,questions,"Are SHUUS, BIOUS, DER, BO the brands Canada excludes?",open,canada-specific,Bastien,2026-10-08
+MTG-0001,meetings,Renovate KPI Workshop (workshop 1),,kpi-catalog,,2026-10-09
+MTG-0002,meetings,KPI / Renovate Gold review (workshop 2),,kpi-catalog,,2026-10-15
+QST-0001,questions,"Who said ""start with attributes first"" in workshop 1: Fatima (version 1) or Mezyan (version 2)?",answered,kpi-catalog,Bastien,2026-10-09
+QST-0002,questions,"Workshop 1 date, and date of workshop 2",answered,kpi-catalog,Bastien,2026-10-15
+QST-0003,questions,"Surnames and entities of Sandra, Damien, Thomas, Oli, Deepti, Andres, Ajantha, Mezyan (Fatima dropp…",dropped,system,Bastien,2026-10-14
+QST-0004,questions,"Are SHUUS, BIOUS, DER, BO the brands Canada excludes?",answered,canada-specific,Bastien,2026-10-14
 QST-0005,questions,"Is the ""T2C KPI catalog Canada"" the D2C KPI catalog?",open,kpi-catalog,Deepti,2026-10-08
 QST-0006,questions,"Which brand-specific local definitions (e.g. ""active customer"") does Canada need?",open,governance-scope,Bastien,2026-10-08
-QST-0007,questions,Who decides the open Genie questions DEC-0001 to DEC-0010?,open,governance-scope,Deepti,2026-10-08
+QST-0007,questions,Who decides the open Genie questions DEC-0001 to DEC-0010?,answered,governance-scope,Deepti,2026-10-14
 QST-0008,questions,Value format of subcategories and Is_Churn_12M_36M in the LiveRamp file (empty in sample),open,churn-engagement,Damien,2026-10-08
-QST-0009,questions,Will the weekly LiveRamp file be sourced from Gold once it exists?,open,governance-scope,Damien,2026-10-08
+QST-0009,questions,Will the weekly LiveRamp file be sourced from Gold once it exists?,answered,governance-scope,Damien,2026-10-14
 QST-0010,questions,What does Is_Churn_12M_36M mean: one flag or two?,answered,churn-engagement,Bastien,2026-10-08
+QST-0011,questions,"Will someone other than Mezyan and Bastien hold the final word for Canada (KPI definitions, complet…",answered,governance-scope,Bastien,2026-10-14
+QST-0012,questions,Gold IDs: is Gold brand_customer_id equal to Canada brand_customer_id or to brand_mdm_id (1:1 count…,open,identity-ids,Andres,2026-10-15
+QST-0013,questions,"Genie contradiction: LiveRamp churn flags said to be derived from churn_status_key, yet 'not mappin…",open,churn-engagement,Bastien (ask Genie),2026-10-15
+QST-0014,questions,Engagement check: 4.13M engaged of 4.95M contactable (84%) looks high for click/open L12M. Does las…,open,churn-engagement,Bastien (ask Genie),2026-10-14
+QST-0015,questions,Report inventory incomplete: 'Buyer Analysis' and the BAR dashboard are used in KPI formulas but mi…,open,reporting-coverage,Bastien (ask Genie),2026-10-14
+QST-0016,questions,The LiveRamp file is weekly but its source view (customer360) refreshes monthly: what feeds the wee…,open,churn-engagement,Damien,2026-10-14
+QST-0017,questions,Will Gold backfill the 58 months of monthly snapshot history and the 16 CLV quarters?,open,reporting-coverage,Deepti,2026-10-15
+QST-0018,questions,"PII: LiveRamp, SFMC and Attentive need cleartext email, phone, address. Will PII sit in Gold or in …",open,governance-scope,Deepti,2026-10-15
+QST-0019,questions,"Do Canada-only brands (BIOCA, GAB) and the division mapping ACD = LDB exist in the Gold brand and d…",open,canada-specific,Deepti,2026-10-14
+QST-0020,questions,"Customer-level sub-categories (anti-aging, suncare): Gold has product hierarchy only. Derive affini…",answered,gold-datapoints,Deepti,2026-10-15
+QST-0021,questions,Which workbook sheet is the master for additions: 'All Domains - SuperGold' (sent to data teams) or…,answered,governance-scope,Deepti,2026-10-15
+QST-0022,questions,"Is 'Diamond' the US target schema replacing SuperGold, and who approves its row-by-row changes?",answered,governance-scope,Deepti,2026-10-15
+QST-0023,questions,"Definition of engaged_prospects_l12m, and mapping of segment_type (5 values) to Gold model_name / s…",open,churn-engagement,Damien,2026-10-14
+QST-0024,questions,Is any Send Time Optimization metric used in a Canada report? (Genie did not find one),open,kpi-catalog,Bastien (ask Genie),2026-10-14
+QST-0025,questions,Which KPI catalog sheet did Genie use for its coverage analysis: 'D2C KPI Catalog - LU 5-8' (958 ro…,open,kpi-catalog,Bastien (ask Genie),2026-10-14
+QST-0026,questions,"Where does Canada's brand MDM ID come from, given Canada does not use Reltio (US brand MDM ID is Re…",open,identity-ids,Deepti,2026-10-15
+QST-0027,questions,"PII access in Gold: which groups see cleartext PII (activation yes, analysts no)? Unity Catalog gro…",open,governance-scope,Andres,2026-10-15
+QST-0028,questions,"Is CLV actually computed and stored in Gold (catalog defines it: Y1+Y2+Y3, AOV x frequency x retent…",open,kpi-catalog,Deepti,2026-10-15
+QST-0029,questions,Does Canada need brand MDM ID in Gold? List exports and reports that join on it today (LiveRamp at …,open,identity-ids,Bastien,2026-10-15
 REQ-0001,requirements,The Gold layer must contain all data elements used by downstream products and external activation p…,agreed,gold-datapoints,Bastien,2026-10-08
 REQ-0002,requirements,Every KPI used in reporting must be present in the Gold layer requirements (workbook / Canada KPI c…,agreed,kpi-catalog,Bastien,2026-10-08
 REQ-0003,requirements,Support monthly historical snapshots (or equivalent) so the Canada executive scorecard trends can b…,proposed,reporting-coverage,Canada reporting (via Genie analysis),2026-10-08
 REQ-0004,requirements,"Add new consumer status keys (1 month, 12 months, YTD)",proposed,reporting-coverage,Canada reporting (via Genie analysis),2026-10-08
 REQ-0005,requirements,Add first email opt-in date and email unsubscribe event date,proposed,reporting-coverage,Canada reporting (via Genie analysis),2026-10-08
 REQ-0006,requirements,"Provide CLV and retention rate (pre-computed or agreed building blocks), exact AOV, and LY / LY2 ne…",proposed,reporting-coverage,Canada reporting (via Genie analysis),2026-10-08
-REQ-0007,requirements,"Add churn flags (12-24 months, 24+ months) and the engaged prospects L12M flag, or document their d…",proposed,churn-engagement,Canada reporting (via Genie analysis),2026-10-08
+REQ-0007,requirements,"Add churn flags (12-24 months, 24+ months) and the engaged prospects L12M flag, or document their d…",proposed,churn-engagement,Canada reporting (via Genie analysis),2026-10-14
 REQ-0008,requirements,"Represent LiveRamp segment_type values (RFMT, Churn Prediction 12M, Likely to Convert 3 Months, Pro…",proposed,churn-engagement,Canada reporting (via Genie analysis),2026-10-08
 REQ-0009,requirements,Map brand_mdm_id / global_mdm_id to brand_customer_id / global_customer_id and state which ID each …,proposed,identity-ids,Canada reporting (via Genie analysis),2026-10-08
-REQ-0010,requirements,"Canada-specific handling: preferred_language EN/FR populated, brand_country CAN, excluded brands SH…",proposed,canada-specific,Canada reporting (via Genie analysis),2026-10-08
+REQ-0010,requirements,"Canada-specific handling: standardised preferred language EN/FR (today 18 raw values, 29% unknown),…",proposed,canada-specific,Canada reporting (via Genie analysis),2026-10-14
 REQ-0011,requirements,Canada KPI catalog must support a 3-month period in addition to MTD / YTD,proposed,kpi-catalog,Canada (raised at workshop 1),2026-10-08
 REQ-0012,requirements,"Review the Gold-layer attributes required for Canada, starting from the US Gold structure",proposed,gold-datapoints,Canada + Reporting team (workshop 1),2026-10-08
-REQ-0013,requirements,"Add product sub-categories (for example anti-aging, suncare) for more granularity than product_cate…",requested,gold-datapoints,"Damien (LiveRamp, Canada)",2026-10-08
+REQ-0013,requirements,"Add product sub-categories (for example anti-aging, suncare) for more granularity than product_cate…",requested,gold-datapoints,"Damien (LiveRamp, Canada)",2026-10-14
 REQ-0014,requirements,"Add Is_Churn_12M_36M: one flag for the 12-36 month window, to create the lapsed buyers segment",requested,churn-engagement,"Damien (LiveRamp, Canada)",2026-10-08
+REQ-0015,requirements,"Activation platforms (LiveRamp, SFMC, Attentive) need cleartext PII (email, phone, address) from Go…",proposed,governance-scope,Canada (via Genie analysis),2026-10-14
+REQ-0016,requirements,Gold adds the first email opt-in date (needed for In/Out flow and new contactables),agreed,gold-datapoints,Bastien,2026-10-15
 SRC-0001,sources,"DDX Elevate deck (March 2026), context only",,,,2026-10-08
 SRC-0002,sources,"US workbook Gold Layer Domain Data Requirements (SuperGold, KPI catalog, backlog)",,,,2026-10-08
 SRC-0003,sources,Genie analysis: Canada reports vs SuperGold,,,,2026-10-08
@@ -590,12 +627,18 @@ SRC-0007,sources,"LiveRamp weekly file sample ""LR for RENOVATE.xlsx"" (51 colum
 SRC-0008,sources,Bastien's chat messages and draft email to the data teams,,,,2026-10-08
 SRC-0009,sources,Assistant suggestion (not a project source),,,,2026-10-08
 SRC-0010,sources,Databricks Genie prompts A-C (Canada coverage),,,,2026-10-08
+SRC-0011,sources,Bastien answers on governance (workshop 1 name and date; Mezyan = Fatima; Canada business owners; C…,,,,2026-10-09
+SRC-0012,sources,"Bastien answers on the open-questions table (Ale final word; decide with Deepti, Deepti final; bran…",,,,2026-10-14
+SRC-0013,sources,"Genie answers to the open questions + Renovate data context reference (tables, snapshots, IDs, KPI …",,,,2026-10-14
+SRC-0014,sources,Workshop 2 transcript (KPI / Renovate Gold review),,,,2026-10-15
 STK-0001,stakeholders,Sandra | SFMC and Attentive data requirements,,,,2026-10-08
 STK-0002,stakeholders,"Damien | Canada team, in charge of LiveRamp (data requirements)",,,,2026-10-08
 STK-0003,stakeholders,Thomas | Genie data requirements,,,,2026-10-08
-STK-0004,stakeholders,Oli | Genie data requirements,,,,2026-10-08
-STK-0005,stakeholders,Deepti | Leads reporting and analytics on the IT side for all zones. Renovate scope: identify the r…,,,,2026-10-08
-STK-0006,stakeholders,Andres | Manages implementation and data engineering on the IT side (all zones). Co-decides deliver…,,,,2026-10-08
-STK-0007,stakeholders,"Fatima | Noted that the US exercise started with attributes first, KPIs later",,,,2026-10-08
-STK-0008,stakeholders,"Ajantha | Project Manager for Renovate, bridging the US, Canada and LATAM teams (self-introduced). …",,,,2026-10-08
-STK-0009,stakeholders,Mezyan | Bastien's manager; Project Manager and responsible for the Canada data teams. Suggested st…,,,,2026-10-08
+STK-0004,stakeholders,Oli | Genie data requirements,,,,2026-10-14
+STK-0005,stakeholders,Deepti Keelara | Leads reporting and analytics on the IT side for all zones. Renovate scope: identi…,,,,2026-10-15
+STK-0006,stakeholders,Andres Gonzalez | Manages implementation and data engineering on the IT side (all zones). Co-decide…,,,,2026-10-15
+STK-0007,stakeholders,Fatima | SUPERSEDED: not a real participant; same person as STK-0009 Mezyan (Bastien 2026-10-09),,,,2026-10-09
+STK-0008,stakeholders,"Ajantha Mohanty | Project Manager for Renovate, bridging the US, Canada and LATAM teams (self-intro…",,,,2026-10-15
+STK-0009,stakeholders,Mezyan | Bastien's manager; Project Manager and responsible for the Canada data teams. Canada busin…,,,,2026-10-09
+STK-0010,stakeholders,"Ale | Mezyan's boss. Can hold the final word for Canada (KPI definitions, completion); escalation p…",,,,2026-10-14
+STK-0011,stakeholders,"Shabri | L'Oréal USA (LUSA) SuperGold owner (Genie: USA PM, schema design authority). Not the final…",,,,2026-10-14
